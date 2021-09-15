@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Procurement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="main add-vendor">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 no-padding position-fixed">
+                <div class="sidebar">
+                    <ul class="sidebar-list list-unstyled">
+                        <li class="dashboard-icon">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                    <defs>
+                                        <style>
+                                            .cls-1{fill:none;stroke:#3f4254;stroke-linecap:round;stroke-linejoin:round}
+                                        </style>
+                                    </defs>
+                                    <g id="layout" transform="translate(-2.5 -2.5)">
+                                        <rect id="Rectangle_13" width="16" height="16" class="cls-1" data-name="Rectangle 13" rx="2" transform="translate(3 3)"/>
+                                        <path id="Line_1" d="M0 0L16 0" class="cls-1" data-name="Line 1" transform="translate(3 8.333)"/>
+                                        <path id="Line_2" d="M0 10.5L0 0" class="cls-1" data-name="Line 2" transform="translate(8.333 8.5)"/>
+                                    </g>
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="user-icon">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14.104" viewBox="0 0 17 14.104">
+                                    <defs>
+                                        <style>
+                                            .cls-1{fill:none;stroke:#3f4254;stroke-linecap:round;stroke-linejoin:round}
+                                        </style>
+                                    </defs>
+                                    <g id="users" transform="translate(-.5 -2.487)">
+                                        <path id="Path_11" d="M12.687 19.383v-1.461A2.922 2.922 0 0 0 9.765 15H3.922A2.922 2.922 0 0 0 1 17.922v1.461" class="cls-1" data-name="Path 11" transform="translate(0 -3.292)"/>
+                                        <circle id="Ellipse_5" cx="3" cy="3" r="3" class="cls-1" data-name="Ellipse 5" transform="translate(3.979 3)"/>
+                                        <path id="Path_12" d="M22.191 19.418v-1.461A2.922 2.922 0 0 0 20 15.13" class="cls-1" data-name="Path 12" transform="translate(-5.191 -3.327)"/>
+                                        <path id="Path_13" d="M16 3.13a2.922 2.922 0 0 1 0 5.661" class="cls-1" data-name="Path 13" transform="translate(-4.098 -.035)"/>
+                                    </g>
+                                </svg>
+
+                                <span>Vendors</span>
+                            </a>
+                        </li>
+                        <li class="user-icon">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14.104" viewBox="0 0 17 14.104">
+                                    <defs>
+                                        <style>
+                                            .cls-1{fill:none;stroke:#3f4254;stroke-linecap:round;stroke-linejoin:round}
+                                        </style>
+                                    </defs>
+                                    <g id="users" transform="translate(-.5 -2.487)">
+                                        <path id="Path_11" d="M12.687 19.383v-1.461A2.922 2.922 0 0 0 9.765 15H3.922A2.922 2.922 0 0 0 1 17.922v1.461" class="cls-1" data-name="Path 11" transform="translate(0 -3.292)"/>
+                                        <circle id="Ellipse_5" cx="3" cy="3" r="3" class="cls-1" data-name="Ellipse 5" transform="translate(3.979 3)"/>
+                                        <path id="Path_12" d="M22.191 19.418v-1.461A2.922 2.922 0 0 0 20 15.13" class="cls-1" data-name="Path 12" transform="translate(-5.191 -3.327)"/>
+                                        <path id="Path_13" d="M16 3.13a2.922 2.922 0 0 1 0 5.661" class="cls-1" data-name="Path 13" transform="translate(-4.098 -.035)"/>
+                                    </g>
+                                </svg>
+
+                                <span>Buyers</span>
+                            </a>
+                        </li>
+                        <li class="product-icon">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16.724" viewBox="0 0 17 16.724">
+                                    <defs>
+                                        <style>
+                                            .cls-1{fill:none;stroke:#3f4254;stroke-linecap:round;stroke-linejoin:round}
+                                        </style>
+                                    </defs>
+                                    <g id="gift" transform="translate(-1.5 -1.5)">
+                                        <path id="Path_14" d="M16.579 12v7.116H4V12" class="cls-1" data-name="Path 14" transform="translate(-.428 -1.392)"/>
+                                        <path id="Rectangle_14" d="M0 0H16V4H0z" class="cls-1" data-name="Rectangle 14" transform="translate(2 6)"/>
+                                        <path id="Path_17" d="M0 11.131V0" class="cls-1" data-name="Path 17" transform="translate(10 6)"/>
+                                        <path id="Path_15" d="M10.5 5.931H6.966a1.966 1.966 0 1 1 0-3.931C9.717 2 10.5 5.931 10.5 5.931z" class="cls-1" data-name="Path 15" transform="translate(-.641)"/>
+                                        <path id="Path_16" d="M12 5.931h3.538a1.966 1.966 0 1 0 0-3.931C12.786 2 12 5.931 12 5.931z" class="cls-1" data-name="Path 16" transform="translate(-2.138)"/>
+                                    </g>
+                                </svg>
+                                <span>Products</span>
+                            </a>
+                        </li>
+                        <li class="setting-icon">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                                    <defs>
+                                        <style>
+                                            .cls-1{fill:none;stroke:#3f4254;stroke-linecap:round;stroke-linejoin:round}
+                                        </style>
+                                    </defs>
+                                    <g id="settings" transform="translate(-.5 -.5)">
+                                        <circle id="Ellipse_3" cx="2" cy="2" r="2" class="cls-1" data-name="Ellipse 3" transform="translate(6.963 6.963)"/>
+                                        <path id="Path_7" d="M14.382 11.182a1.2 1.2 0 0 0 .24 1.324l.044.044a1.455 1.455 0 1 1-2.058 2.058l-.044-.044a1.21 1.21 0 0 0-2.051.858v.124a1.455 1.455 0 0 1-2.909 0v-.066a1.2 1.2 0 0 0-.785-1.1 1.2 1.2 0 0 0-1.324.24l-.044.044a1.455 1.455 0 1 1-2.058-2.058l.044-.044a1.21 1.21 0 0 0-.858-2.051h-.124a1.455 1.455 0 0 1 0-2.909h.065a1.2 1.2 0 0 0 1.1-.785 1.2 1.2 0 0 0-.24-1.324l-.044-.044a1.455 1.455 0 1 1 2.057-2.056l.044.044a1.2 1.2 0 0 0 1.324.24h.058a1.2 1.2 0 0 0 .727-1.1v-.122a1.455 1.455 0 0 1 2.909 0v.065a1.21 1.21 0 0 0 2.051.858l.044-.044a1.455 1.455 0 1 1 2.058 2.058l-.044.044a1.2 1.2 0 0 0-.24 1.324v.058a1.2 1.2 0 0 0 1.1.727h.124a1.455 1.455 0 0 1 0 2.909h-.068a1.2 1.2 0 0 0-1.098.728z" class="cls-1" data-name="Path 7"/>
+                                    </g>
+                                </svg>
+                                <span>Setting</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="user-logout flex">
+                        <div class="img-user">
+                            <img src="" alt="">
+                        </div>
+                        <div class="user-logout-detail">
+                            <p class="user-name">James Jones</p>
+                            <a href="">Log out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 no-padding pull-right">
+                <div class="main-header">
+                    <div class="row no-margin">
+                        <div class="col-sm-6">
+                            <div class="left-head">
+                                <ul class="list-unstyled flex-start">
+                                    <li class="main-title">
+                                        <p>Add new vendor</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="right-head">
+                                <div class="right-head-content flex-end">
+                                    <div class="add-btn">
+                                        <button class="btn-green btn-disabled"> <i class="fal fa-plus"></i> Add vendor</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-inner with-breadcrumb">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Vendors</a></li>
+                            <li class="active">Add vendor</li>
+                        </ol>
+                        <div class="block">
+                            <div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Business</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Individual</a>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="home">
+                                        <form action="">
+                                            <div class="form-list">
+                                                <div class="form-list-content">
+                                                    <div class="form-list-part">
+                                                        <h4>Description of vendor</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Vendor name</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter vendor name" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Type of business</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose type">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Tax ID</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter tax ID" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <p class="input-title">Category</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose type">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more categories
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-list-part">
+                                                        <h4>Responsible person</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Name</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter person name" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Surname</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter surname" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Position</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter position" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Phone</p>
+                                                                    <div class="input-group half-radius">
+                                                                        <div class="input-group-btn">
+                                                                            <select class="selectpicker form-control">
+                                                                                <option data-icon="">
+                                                                                    +41
+                                                                                </option>
+                                                                                <option>Ketchup</option>
+                                                                                <option>Barbecue</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter phone">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Email</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter email" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-list-part">
+                                                        <h4>Addresses</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Country</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose country">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">City</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose city">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Street</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter street address" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Phone</p>
+                                                                    <div class="input-group half-radius">
+                                                                        <div class="input-group-btn">
+                                                                            <select class="selectpicker form-control">
+                                                                                <option data-icon="">
+                                                                                    +41
+                                                                                </option>
+                                                                                <option>Ketchup</option>
+                                                                                <option>Barbecue</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter phone">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Email</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter email" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more addresses
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-list-part">
+                                                        <h4>Bank account details</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Bank name</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter bank name" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Bank code</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter bank code" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Account number</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter account number" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Routing number</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter routing number" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">SWIFT</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter swift number" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more bank accounts
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="submit-btns">
+                                                    <button type="submit" class="btn-green">Submit</button>
+                                                    <button type="button" class="btn-disabled">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="profile">
+                                        <form action="">
+                                            <div class="form-list">
+                                                <div class="form-list-content">
+                                                    <div class="form-list-part">
+                                                        <h4>Description of vendor</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Name</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter person name" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Surname</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter surname" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Position</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter position" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Type of business</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose type">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Tax ID</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter tax ID" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-12">
+                                                                    <p class="input-title">Category</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose type">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more categories
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-list-part">
+                                                        <h4>Addresses</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Country</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose country">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">City</p>
+                                                                    <div class="input-group">
+                                                                        <select class="selectpicker form-control" title="Choose city">
+                                                                            <option>Mustard</option>
+                                                                            <option>Ketchup</option>
+                                                                            <option>Barbecue</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Street</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter street address" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Phone</p>
+                                                                    <div class="input-group half-radius">
+                                                                        <div class="input-group-btn">
+                                                                            <select class="selectpicker form-control">
+                                                                                <option data-icon="fa-heart">
+                                                                                    +41
+                                                                                </option>
+                                                                                <option>Ketchup</option>
+                                                                                <option>Barbecue</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter phone">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Email</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter email" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more addresses
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-list-part">
+                                                        <h4>Bank account details</h4>
+                                                        <div class="additional-block">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Bank name</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter bank name" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Bank code</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter bank code" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Account number</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter account number" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">Routing number</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter routing number" >
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <p class="input-title">SWIFT</p>
+                                                                    <div class="input-group">
+                                                                        <input type="text" class="form-control input-border" placeholder="Enter swift number" >
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-start">
+                                                            <button class="btn-transparent add-btn">
+                                                                Add more bank accounts
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="submit-btns">
+                                                    <button type="submit" class="btn-green">Submit</button>
+                                                    <button type="button" class="btn-disabled">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

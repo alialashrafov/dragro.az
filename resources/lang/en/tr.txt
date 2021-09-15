@@ -1,0 +1,52 @@
+REQUEST FOR COMPANY
+Vendor form
+Bank account
+Salesperson
+Attachments
+Description of vendor
+Company type
+Vendor name
+Type of business
+Tax ID
+Choose company type
+Main activities
+Director
+Name
+Surname
+Phone
+Email
+Contract person
+Addresses
+Country
+City
+Street
+Next
+Bank account details
+Bank account
+Currency
+SWIFT
+Bank code
+Bank CA
+Accountant
+Tax regime
+Salesperson
+Activities
+Request for proposal
+Details
+number
+Category
+PR number
+Products & Services
+DESCRIPTION
+QUANTITY
+MANUFACTURER NAME
+PART NUMBER
+PRICE
+DELIVERY DATE
+image
+Deadline
+Which is important for you?
+delivery
+both
+ranking
+Type of business

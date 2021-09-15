@@ -1,0 +1,502 @@
+#seats {
+  padding: 0 70px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  .container-fluid {
+    .row {
+      .col-md-7 {
+        .top {
+          margin-bottom: 40px;
+          h1 {
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: #000000;
+            margin-top: 0px;
+            &:last-child {
+              margin-top: 15px;
+            }
+          }
+        }
+        .hall {
+          width: 80%;
+          .topHall {
+            height: 185px;
+            width: 498px;
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            border-top: 1px solid #c4c4c4;
+            position: relative;
+            padding: 30px;
+            &::before {
+              position: absolute;
+              content: "";
+              bottom: -30px;
+              left: 0;
+              width: 1px;
+              height: 116%;
+              background: #c4c4c4;
+            }
+            &::after {
+              position: absolute;
+              content: "";
+              bottom: -30px;
+              right: 0;
+              width: 1px;
+              height: 116%;
+              background: #c4c4c4;
+            }
+            ul {
+              div {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                border-radius: 5px;
+                background: #d0d0d0;
+                cursor: pointer;
+                margin: 3px;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 25px;
+                vertical-align: top;
+                text-align: center;
+                &:hover {
+                  background: #6ad074 !important;
+                }
+              }
+              &:last-child {
+                margin-left: auto;
+                li {
+                  div {
+                    background: #a293c1;
+                  }
+                }
+              }
+            }
+          }
+          .hallAndInfo {
+            position: relative;
+            .infoSeat {
+              position: absolute;
+              bottom: 47%;
+              width: fit-content;
+              right: -27%;
+            }
+          }
+          .bottomHall {
+            width: 620px;
+            padding: 30px;
+            position: relative;
+            display: flex;
+            margin-bottom: 60px;
+            justify-content: space-between;
+            border: 1px solid #c4c4c4;
+            border-top: none;
+            margin: 0 auto;
+            &::before {
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 0;
+              width: 10%;
+              height: 1px;
+              background: #c4c4c4;
+            }
+            &::after {
+              position: absolute;
+              content: "";
+              top: 0;
+              right: 0;
+              width: 10%;
+              height: 1px;
+              background: #c4c4c4;
+            }
+            .center {
+              margin: 0 auto;
+              ul {
+                text-align: center;
+                div {
+                  display: inline-block;
+                  width: 25px;
+                  height: 25px;
+                  background: #d0d0d0;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  margin: 4px;
+                  font-size: 14px;
+                  line-height: 25px;
+                  vertical-align: top;
+                  &:hover {
+                    background: #6ad074;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .col-md-4 {
+        .top {
+          margin-top: 120px;
+          ul {
+            li {
+              display: inline-block;
+              .color {
+                width: 65px;
+                height: 10px;
+                background: #a6d4d7;
+              }
+              font-size: 18px;
+              letter-spacing: 0.05em;
+              color: #000000;
+              margin-right: 15px;
+            }
+            &:nth-child(2) {
+              li {
+                .color {
+                  background: #a293c1;
+                }
+              }
+            }
+            &:nth-child(3) {
+              li {
+                .color {
+                  background: #d0d0d0;
+                }
+              }
+            }
+          }
+        }
+        .row {
+          .col-md-12 {
+            .bottom {
+              width: 260px;
+              margin-top: 100px;
+              background: #ffffff;
+              border: 1px solid #e1e1e1;
+              box-shadow: 0px 4px 4px rgba(143, 143, 143, 0.25);
+              padding: 20px;
+              ul {
+                li {
+                  font-size: 15px;
+                  letter-spacing: 0.05em;
+                  color: #000000;
+                }
+              }
+              a {
+                display: block;
+                width: 100%;
+                margin-top: 15px;
+                color: white;
+                font-size: 18px;
+                letter-spacing: 0.05em;
+                color: #ffffff;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #02a4c8;
+                border-radius: 5px;
+                border: none;
+                box-shadow: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 520px) {
+  #seats {
+    padding: 0;
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          .hall {
+            width: 100%;
+            .topHall {
+              height: 125px;
+              width: 234px;
+              padding: 10px;
+              &::after,
+              &::before {
+                height: 125%;
+              }
+              ul {
+                div {
+                  width: 15px;
+                  height: 15px;
+                  line-height: 15px;
+                  font-size: 5px;
+                }
+              }
+            }
+            .hallAndInfo {
+              .infoSeat {
+                bottom: -35%;
+                right: 59%;
+                font-size: 12px;
+              }
+            }
+            .bottomHall {
+              padding: 10px;
+              width: 290px;
+              margin: 0 auto;
+              .center {
+                ul {
+                  div {
+                    width: 15px;
+                    height: 15px;
+                    line-height: 15px;
+                    margin: 2px;
+                    font-size: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .col-md-4 {
+          .top {
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 120px;
+            ul {
+              margin-bottom: 0;
+              li {
+                font-size: 10px;
+                .color {
+                  width: 50px;
+                  height: 6px;
+                }
+              }
+            }
+          }
+          .row {
+            .col-md-12 {
+              .bottom {
+                margin: 0 auto;
+                margin-top: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .marginRightBox {
+    margin-right: 10px !important;
+  }
+}
+@media only screen and (min-width: 520px) and (max-width: 768px) {
+  #seats {
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          .hall {
+            width: 100%;
+            .topHall {
+              width: 262px;
+              height: 125px;
+              &::after,
+              &::before {
+                height: 125%;
+              }
+              ul {
+                div {
+                  width: 18px;
+                  height: 18px;
+                  line-height: 18px;
+                  font-size: 7px;
+                }
+              }
+            }
+            .hallAndInfo {
+              .infoSeat {
+                bottom: -35%;
+                right: 59%;
+                font-size: 12px;
+              }
+            }
+            .bottomHall {
+              margin: 0 auto;
+              padding: 10px;
+              width: 328px;
+              .center {
+                ul {
+                  div {
+                    font-size: 7px;
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 2px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .col-md-4 {
+          .top {
+            ul {
+              margin-bottom: 0;
+              li {
+                font-size: 10px;
+                .color {
+                  width: 50px;
+                  height: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  #seats {
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          .hall {
+            width: 100%;
+            .topHall {
+              width: 262px;
+              height: 125px;
+              &::after,
+              &::before {
+                height: 125%;
+              }
+              ul {
+                div {
+                  width: 18px;
+                  height: 18px;
+                  line-height: 18px;
+                  font-size: 7px;
+                }
+              }
+            }
+            .hallAndInfo {
+              .infoSeat {
+                bottom: 195px;
+                right: -147px;
+                font-size: 12px;
+              }
+            }
+            .bottomHall {
+              margin: 0 auto;
+              padding: 10px;
+              width: 328px;
+              .center {
+                ul {
+                  div {
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 2px;
+                    font-size: 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .col-md-4 {
+          .top {
+            ul {
+              margin-bottom: 0;
+              li {
+                font-size: 10px;
+                .color {
+                  width: 50px;
+                  height: 6px;
+                }
+              }
+            }
+          }
+          .row {
+            .col-md-12 {
+              .bottom {
+                margin-top: 202px;
+                ul {
+                  li {
+                    font-size: 12px;
+                  }
+                }
+                a {
+                  height: 40px;
+                  line-height: 40px;
+                  font-size: 15px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .marginRightBox {
+    margin-right: 10px !important;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1457px) {
+  .marginRightBox {
+    margin-right: 29px !important;
+  }
+  #seats {
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          .hall {
+            width: 100%;
+            .topHall {
+              width: 343px;
+              height: 125px;
+              &::after,
+              &::before {
+                height: 125%;
+              }
+              ul {
+                div {
+                  width: 18px;
+                  height: 18px;
+                  line-height: 18px;
+                  font-size: 10px;
+                }
+              }
+            }
+            .hallAndInfo {
+              .infoSeat {
+                font-size: 12px;
+                bottom: 238px;
+                right: -143px;
+              }
+            }
+            .bottomHall {
+              margin: 0 auto;
+              padding: 10px;
+              width: 430px;
+              .center {
+                ul {
+                  div {
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    margin: 2px;
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1458px) {
+  .marginRightBox {
+    margin-right: 50px !important;
+  }
+}

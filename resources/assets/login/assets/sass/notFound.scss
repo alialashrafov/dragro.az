@@ -1,0 +1,188 @@
+/////////////////////////////////////////////////////////////////////
+#notFound {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%;
+  .notfoundDiv {
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+    background: #2d72d9ad;
+    @include box-shadow(9px 12px 17px 1px rgba(255, 255, 255, 0.14));
+    @include border-radius(20px);
+    padding: 67px;
+    .top {
+      position: relative;
+      width: fit-content;
+      font-size: 160px;
+      font-family: Averta;
+      color: white;
+      word-break: keep-all;
+      .bottom {
+        position: absolute;
+        bottom: 7%;
+        right: 1%;
+        font-size: 20px;
+        font-family: Averta;
+      }
+    }
+    .center {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      color: white;
+      .text {
+        font-size: 28px;
+        font-family: Averta;
+        text-align: center;
+        margin-top: 1vw;
+      }
+      a {
+        background: #0b0044;
+        box-sizing: border-box;
+        @include box-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+        @include border-radius(5px);
+        font-family: Averta;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        @include transition(all ease-in-out 0.2s);
+        padding: 10px 20px;
+        margin-left: 15px;
+        margin-top: 15px;
+        &:hover {
+          background: white;
+          color: #0b0044;
+        }
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 155%;
+      height: 201px;
+      background: rgba(255, 255, 255, 0.205);
+      border: 1px solid #ffffff50;
+      top: -54%;
+      @include transform(rotate(-32deg));
+      left: -124%;
+      @include transition(all 0.3s linear);
+    }
+    &:hover {
+      &::before {
+        top: 127%;
+        left: 47%;
+      }
+    }
+  }
+  &::before {
+    clip-path: polygon(79% 0, 100% 0, 100% 100%, 46% 100%);
+    position: absolute;
+    background: #bfbfbf52;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    content: "";
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+// Responsive
+@media screen and (max-width: 991px) {
+  #notFound {
+    .notfoundDiv {
+      top: 50%;
+      width: 92%;
+      padding: 0 40px;
+      padding-bottom: 15px;
+      .top {
+        font-size: 48px;
+        margin: 0 auto;
+        .bottom {
+          bottom: -18%;
+        }
+      }
+      .center {
+        justify-content: center;
+        .text {
+          font-size: 14px;
+          margin-top: 25px;
+          width: 100%;
+        }
+        a {
+          font-size: 14px;
+          padding: 5px 20px;
+          margin-left: 0;
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1394px) {
+  #notFound {
+    .notfoundDiv {
+      .top {
+        font-size: 100px;
+        margin: 0 auto;
+        .bottom {
+          bottom: -1%;
+        }
+      }
+      .center {
+        .text {
+          font-size: 19px;
+          width: 100%;
+        }
+        a {
+          font-size: 16px;
+          padding: 8px 15px;
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1500px) {
+  #notFound {
+    position: inherit;
+    &::before {
+      height: 115vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1395px) and (max-width: 1600px) {
+  #notFound {
+    .notfoundDiv {
+      .top {
+        font-size: 140px;
+        margin: 0 auto;
+        .bottom {
+          bottom: 3%;
+          font-size: 22px;
+        }
+      }
+      .center {
+        .text {
+          font-size: 25px;
+          width: 100%;
+        }
+        a {
+          margin: 0 auto;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

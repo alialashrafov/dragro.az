@@ -1,0 +1,66 @@
+///////////////////////////////////////////////////////
+@mixin box-shadow($boxShadow) {
+    -webkit-box-shadow: $boxShadow;
+    -moz-box-shadow: $boxShadow;
+    -ms-box-shadow: $boxShadow;
+    -o-box-shadow: $boxShadow;
+    box-shadow: $boxShadow;
+  }
+  // @include box-shadow(none);
+  
+  ///////////////////////////////////////////////////////
+  @mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+  }
+  // @include border-radius(none);
+  
+  ///////////////////////////////////////////////////////
+  @mixin transform($properties) {
+    -webkit-transform: $properties;
+    -moz-transform: $properties;
+    -ms-transform: $properties;
+    -o-transform: $properties;
+    transform: $properties;
+  }
+  // @include transform(none);
+  
+  ///////////////////////////////////////////////////////
+  @mixin transition($time) {
+    -webkit-transition: ($time);
+    -moz-transition: ($time);
+    -ms-transition: ($time);
+    -o-transition: ($time);
+    transition: ($time);
+  }
+  // @include transition(none);
+  
+  ///////////////////////////////////////////////////////
+  @mixin transitionDouble($time, $time02) {
+    -webkit-transition: ($time, $time02);
+    -moz-transition: ($time, $time02);
+    -ms-transition: ($time, $time02);
+    -o-transition: ($time, $time02);
+    transition: ($time, $time02);
+  }
+  // @include transitionDouble(none);
+  
+  @mixin box-shadowDouble($boxShadow01, $boxShadow02) {
+    -webkit-box-shadow: $boxShadow01, $boxShadow02;
+    -moz-box-shadow: $boxShadow01, $boxShadow02;
+    -ms-box-shadow: $boxShadow01, $boxShadow02;
+    -o-box-shadow: $boxShadow01, $boxShadow02;
+    box-shadow: $boxShadow01, $boxShadow02;
+  }
+
+  @mixin user-select($user) {
+    -webkit-box-shadow: $user;
+    -moz-box-shadow: $user;
+    -ms-box-shadow: $user;
+    -o-box-shadow: $user;
+    user-select: $user;
+  }
+  

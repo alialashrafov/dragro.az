@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIQ,8CAAQ;EAEJ,SAAS,EAAE,KAAK;EAChB,MAAM,EAAE,KAAK;EACf,yDAAW;IACT,UAAU,EAAE,IAAI;IAChB,OAAO,EAAE,CAAC;IACV,WAAW,EAAE,MAAM;IACnB,gBAAgB,EAAE,KAAK;EAMzB,mDAAK;IACH,UAAU,EAAE,KAAK;IACjB,aAAa,EAAE,GAAG;IAClB,UAAU,EAAE,+BAA+B",
+"sources": ["../sass/searchForm.scss"],
+"names": [],
+"file": "searchForm.css"
+}

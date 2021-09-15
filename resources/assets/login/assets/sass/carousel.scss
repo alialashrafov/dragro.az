@@ -1,0 +1,138 @@
+#carousel,
+#carouselSecond {
+  margin-top: 80px;
+  padding: 0 70px;
+  .container {
+    .row {
+      .carouselCol {
+        position: relative;
+        width: 99%;
+        margin: 0 auto;
+        .item {
+          text-align: center;
+          border-right: 1px solid #828282;
+          background: rgba(0, 0, 0, 0.3);
+          padding: 20px 0;
+          h1 {
+            color: white;
+            font-size: 12px;
+            letter-spacing: 0.03em;
+            margin-bottom: 10px;
+            margin-top: 0;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        .myItem {
+          &:nth-child(1) {
+            background: rgba(0, 0, 0, 0.562);
+          }
+        }
+        .owl-dots {
+          display: none;
+        }
+        .customNextBtn,
+        .customPrevBtn {
+          position: absolute;
+          top: 27%;
+          transform: translateY(-50%);
+          font-size: 100px;
+          color: black;
+          z-index: 555;
+          cursor: pointer;
+        }
+        .customPrevBtn {
+          left: -5%;
+        }
+        .customNextBtn {
+          right: -5%;
+        }
+      }
+    }
+  }
+}
+.owl-buttons {
+  display: none;
+}
+#carouselSecond {
+  margin-top: 30px;
+  .container {
+    .row {
+      .carouselCol {
+        width: 100%;
+        .item {
+          border: 1px solid #bdbdbd;
+          background: white;
+          h1 {
+            color: #5c5c5c;
+          }
+        }
+        .myItem {
+          &:nth-child(1) {
+            background: #d9a395;
+            h1 {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  #carousel,
+  #carouselSecond {
+    padding: 0 20px;
+    margin-top: 20px;
+    .container {
+      .row {
+        .carouselCol {
+          .item {
+            h1 {
+            font-size: 10px;
+            }
+          }
+          .customNextBtn,
+          .customPrevBtn {
+            img{
+              width: 18px;
+            }
+          }
+          .customPrevBtn {
+            left: -10%;
+          }
+          .customNextBtn {
+            right: -10%;
+          }
+        }
+      }
+    }
+  }
+  #carouselSecond {
+    .container {
+      .row {
+        .carouselCol {
+          width: 100.5%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+  #carousel,
+  #carouselSecond {
+    .container {
+      .row {
+        .carouselCol {
+          .customPrevBtn {
+            left: -9%;
+          }
+          .customNextBtn {
+            right: -9%;
+          }
+        }
+      }
+    }
+  }
+}

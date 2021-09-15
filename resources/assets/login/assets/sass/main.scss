@@ -1,0 +1,182 @@
+/////////////////////////////////////////////////////////////////////
+#main {
+  background-image: url(../img/main.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        .logo {
+          margin: 40px 0 0 60px;
+          img {
+            object-fit: cover;
+            width: 150px;
+            height: 98px;
+          }
+        }
+        form {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          @include transform(translate(20%, 35%));
+          background: linear-gradient(
+            179.73deg,
+            #ffffff 47.18%,
+            rgba(255, 255, 255, 0) 180.68%
+          );
+          @include box-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          @include border-radius(10px);
+          width: 550px;
+          padding: 70px 80px;
+          padding-bottom: 100px;
+          .head {
+            font-family: Averta;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 45px;
+          }
+          .form-group {
+            input {
+              background: #ffffff;
+              border: 1px solid #828282;
+              @include border-radius(5px);
+              height: 70%;
+              width: 100%;
+              font-family: Averta;
+              color: black;
+              outline: none;
+              @include box-shadow(none);
+              font-size: 16px;
+              padding: 18.5px 18.5px;
+            }
+            margin-bottom: 25px;
+            &:nth-child(3) {
+              margin-bottom: 5px;
+            }
+          }
+          .forgotPass {
+            text-align: right;
+            a {
+              font-family: Averta;
+              font-size: 12px;
+              line-height: 14px;
+              color: #828282;
+              @include transition(all linear 0.2s);
+              &:hover {
+                text-decoration: underline !important;
+              }
+            }
+          }
+          .myButton {
+            background: #3da4ab;
+            @include border-radius(5px);
+            width: 100%;
+            padding: 5px;
+            @include transition(all linear 0.2s);
+            button {
+              font-family: Averta;
+              width: 100%;
+              font-size: 18px;
+              color: #ffffff;
+            }
+            &:hover {
+              background: #31767a;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+// Responsive
+@media screen and (max-width: 991px) {
+  #main {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .logo {
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+            img {
+              width: 115px;
+              height: 74px;
+            }
+          }
+          form {
+            @include transform(translate(-50%, 50%));
+            width: 290px;
+            padding: 45px 15px;
+            padding-bottom: 35px;
+            .head {
+              font-size: 18px;
+              margin-bottom: 22px;
+            }
+            .form-group {
+              input {
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  #main {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          form {
+            width: 360px;
+            .head {
+              font-size: 20px;
+              margin-bottom: 30px;
+            }
+            .form-group {
+              input {
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #main {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          form {
+            @include transform(translate(-30%, 60%));
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #main {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          form {
+            @include transform(translate(0%, 35%));
+          }
+        }
+      }
+    }
+  }
+}

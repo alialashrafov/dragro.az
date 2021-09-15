@@ -1,0 +1,48 @@
+gomruk destek xidmeti 100$
+parklama xidmeti
+    -18 metrden asagi 10$
+    -18 metrden yuxari 20$
+korpuden istifade xidmeti
+    -minik avtomobil 48$
+    -su neqliyyat vasitesi 1200$
+    -motorsiklet, kvadrosikl ve s 24 $
+    -avtotexnika 5tna qeder 96$
+    -avtotexnika 5tondan yuxari 240$
+    -vaqon paqon metresi 2$
+    -avtotexnika 1 paqon metresi 2.36$
+yukasirma xidmeti
+    -dene ve eded yukleri
+        -kiselerde yesiklerde qutularda olan yukler 1tonu 4.5$
+        -kiplerde taylarda rulon seklinde celleklerde ve cellek formasinda olan yukler tonu 5.3$
+        -baglamada olna metal ve metal prokat tonu 4.9$
+        -baglamada olmayan .... tonu 5.6$
+        -metal tullantilar tonu 4.2$
+        -rezin memulatlar tonu 7$
+        -metal konstruksiyalar ve aavdanliqlar tonu 12$
+        -paketlesdirilmis yukler biq-biqbeqler tonu 4.2$
+        -diger 5.6$
+    -qalaq ve sepkili yukler
+        -denli bitkiler tonu 4.2$
+        -qida mehsullari tonu 3$
+        -senaye mehsullari(xammal ve materiallar) tonu 2.8$
+        -tikinti ve audiyyeti materiallar tonu 5$
+        -diger mehsullar tonu 3.5$
+    -gubre ve diger kimyevi mehsullar
+        -gubre ve bu qebilden mehsullar, sepkili tonu 8$
+        -gubre ve bu qebilden mehsullar, biq-beq tonu 9$
+        -....., asirilma ve biq-beqlesdirme tonu 10$
+    -konteyner
+        -20 futluq yuklu 90$
+        -20 futluq bos 50$
+        -40 ... 120$
+        -40 ... 90$
+        -45 ... 130$
+        -45 ... 100$
+-dartma ve cixartma xidmeti
+    -qosqu 30$
+-restuffing
+    -kiselerde, yesiklerde, qutulard olan yukler tonu 12$
+    -kiplerde, taylarda, rulonseklinde, celleklerde ve cellek formasinda olan yuklerde tonu 8$
+    -paketlsedirilmis yukler -big-beqler, paletler tonu 8$
+    -sepkili yuler tonu 9$
+    -diger yukler tonu 10$

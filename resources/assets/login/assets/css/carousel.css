@@ -1,0 +1,97 @@
+#carousel,
+#carouselSecond {
+  margin-top: 80px;
+  padding: 0 70px; }
+  #carousel .container .row .carouselCol,
+  #carouselSecond .container .row .carouselCol {
+    position: relative;
+    width: 99%;
+    margin: 0 auto; }
+    #carousel .container .row .carouselCol .item,
+    #carouselSecond .container .row .carouselCol .item {
+      text-align: center;
+      border-right: 1px solid #828282;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px 0; }
+      #carousel .container .row .carouselCol .item h1,
+      #carouselSecond .container .row .carouselCol .item h1 {
+        color: white;
+        font-size: 12px;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        margin-top: 0; }
+        #carousel .container .row .carouselCol .item h1:last-child,
+        #carouselSecond .container .row .carouselCol .item h1:last-child {
+          margin-bottom: 0; }
+    #carousel .container .row .carouselCol .myItem:nth-child(1),
+    #carouselSecond .container .row .carouselCol .myItem:nth-child(1) {
+      background: rgba(0, 0, 0, 0.562); }
+    #carousel .container .row .carouselCol .owl-dots,
+    #carouselSecond .container .row .carouselCol .owl-dots {
+      display: none; }
+    #carousel .container .row .carouselCol .customNextBtn,
+    #carousel .container .row .carouselCol .customPrevBtn,
+    #carouselSecond .container .row .carouselCol .customNextBtn,
+    #carouselSecond .container .row .carouselCol .customPrevBtn {
+      position: absolute;
+      top: 27%;
+      transform: translateY(-50%);
+      font-size: 100px;
+      color: black;
+      z-index: 555;
+      cursor: pointer; }
+    #carousel .container .row .carouselCol .customPrevBtn,
+    #carouselSecond .container .row .carouselCol .customPrevBtn {
+      left: -5%; }
+    #carousel .container .row .carouselCol .customNextBtn,
+    #carouselSecond .container .row .carouselCol .customNextBtn {
+      right: -5%; }
+
+.owl-buttons {
+  display: none; }
+
+#carouselSecond {
+  margin-top: 30px; }
+  #carouselSecond .container .row .carouselCol {
+    width: 100%; }
+    #carouselSecond .container .row .carouselCol .item {
+      border: 1px solid #bdbdbd;
+      background: white; }
+      #carouselSecond .container .row .carouselCol .item h1 {
+        color: #5c5c5c; }
+    #carouselSecond .container .row .carouselCol .myItem:nth-child(1) {
+      background: #d9a395; }
+      #carouselSecond .container .row .carouselCol .myItem:nth-child(1) h1 {
+        color: white; }
+
+@media only screen and (max-width: 480px) {
+  #carousel,
+  #carouselSecond {
+    padding: 0 20px;
+    margin-top: 20px; }
+    #carousel .container .row .carouselCol .item h1,
+    #carouselSecond .container .row .carouselCol .item h1 {
+      font-size: 10px; }
+    #carousel .container .row .carouselCol .customNextBtn img,
+    #carousel .container .row .carouselCol .customPrevBtn img,
+    #carouselSecond .container .row .carouselCol .customNextBtn img,
+    #carouselSecond .container .row .carouselCol .customPrevBtn img {
+      width: 18px; }
+    #carousel .container .row .carouselCol .customPrevBtn,
+    #carouselSecond .container .row .carouselCol .customPrevBtn {
+      left: -10%; }
+    #carousel .container .row .carouselCol .customNextBtn,
+    #carouselSecond .container .row .carouselCol .customNextBtn {
+      right: -10%; }
+
+  #carouselSecond .container .row .carouselCol {
+    width: 100.5%; } }
+@media only screen and (min-width: 481px) and (max-width: 770px) {
+  #carousel .container .row .carouselCol .customPrevBtn,
+  #carouselSecond .container .row .carouselCol .customPrevBtn {
+    left: -9%; }
+  #carousel .container .row .carouselCol .customNextBtn,
+  #carouselSecond .container .row .carouselCol .customNextBtn {
+    right: -9%; } }
+
+/*# sourceMappingURL=carousel.css.map */

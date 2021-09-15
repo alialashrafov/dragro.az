@@ -1,0 +1,244 @@
+/////////////////////////////////////////////////////////////////////
+#allCahrts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 40px;
+  .singleChart {
+    width: calc(100% / 4.2);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include border-radius(10px);
+    padding: 30px 20px;
+    @include transition(all ease-out 0.3s);
+    .chart {
+      width: 25%;
+      canvas {
+        height: 100% !important;
+        width: 100% !important;
+      }
+    }
+    .content {
+      width: 75%;
+      .num {
+        font-family: Averta;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: right;
+      }
+      .desc {
+        text-align: right;
+        font-family: Averta;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    &:nth-child(1) {
+      background: #f7e2d5;
+      border: 1px solid #f88239;
+      @include box-shadow(0px 10px 15px rgba(174, 174, 174, 0.35));
+      .content {
+        .num,
+        .desc {
+          color: #f98843;
+        }
+      }
+    }
+    &:nth-child(2) {
+      background: #ecd9fa;
+      border: 1px solid #bb6bd9;
+      @include box-shadow(0px 10px 15px rgba(174, 174, 174, 0.35));
+      .content {
+        .num,
+        .desc {
+          color: #bb6bd9;
+        }
+      }
+    }
+    &:nth-child(3) {
+      background: #f8efc9;
+      border: 1px solid #dab412;
+      @include box-shadow(0px 10px 15px rgba(174, 174, 174, 0.35));
+      .content {
+        .num,
+        .desc {
+          color: #dfb500;
+        }
+      }
+    }
+    &:nth-child(4) {
+      background: #d8eaf7;
+      border: 1px solid #25a3fe;
+      @include box-shadow(0px 10px 15px rgba(174, 174, 174, 0.35));
+      .content {
+        .num,
+        .desc {
+          color: #4fb5ff;
+        }
+      }
+    }
+    &:hover {
+      @include transform(scale(1.05));
+      &:nth-child(1) {
+        @include box-shadow(0px 10px 15px hsla(23, 93%, 60%, 0.308))
+      }
+      &:nth-child(2) {
+        @include box-shadow(0px 10px 15px hsla(284, 59%, 64%, 0.308))
+      }
+      &:nth-child(3) {
+        @include box-shadow(0px 10px 15px hsla(49, 85%, 46%, 0.308))
+      }
+      &:nth-child(4) {
+        @include box-shadow( 0px 10px 15px hsla(205, 99%, 57%, 0.308))
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+.twoCharts {
+  .singleChart {
+    width: calc(100% / 2.1) !important;
+    .chart {
+      width: 13% !important;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+// Responsive
+@media screen and (max-width: 991px) {
+  #allCahrts {
+    padding-left: 15px;
+    margin: 30px 0px;
+    flex-wrap: wrap;
+    .singleChart {
+      width: calc(100% / 2.1);
+      height: 270px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+      .chart {
+        width: 100%;
+      }
+      .content {
+        width: 100%;
+        .num {
+          font-size: 20px;
+          text-align: center;
+        }
+        .desc {
+          font-size: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .twoCharts {
+    .singleChart {
+      .chart {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 991px) {
+  #allCahrts {
+    .singleChart {
+      height: 260px;
+      width: calc(100% / 4.2);
+      .chart {
+        width: 100%;
+      }
+      .content {
+        .num {
+          font-size: 16px;
+        }
+        .desc {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .twoCharts {
+    .singleChart {
+      .chart {
+        width: 50% !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px){
+  #allCahrts {
+    .singleChart {
+      height: 150px;
+      .chart {
+        width: 35%;
+      }
+      .content {
+        width: 65%;
+        .num {
+          text-align: right;
+        }
+        .desc {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .twoCharts {
+    .singleChart {
+      .chart {
+        width: 25% !important;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  #allCahrts {
+    .singleChart {
+      height: 150px;
+      .chart {
+        width: 40%;
+      }
+      .content {
+        width: 55%;
+        .num {
+          text-align: right;
+          font-size: 22px;
+        }
+        .desc {
+          text-align: right;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px){
+  #allCahrts {
+    .singleChart {
+      height: 80px;
+      .chart {
+        width: 35%;
+      }
+      .content {
+        width: 65%;
+        .num {
+          text-align: right;
+          font-size: 20px;
+        }
+        .desc {
+          text-align: right;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

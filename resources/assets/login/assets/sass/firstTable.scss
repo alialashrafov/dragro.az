@@ -1,0 +1,593 @@
+#firstTable {
+  margin-top: 70px;
+  padding: 0 70px;
+  .container-fluid {
+    .row {
+      .col-md-12 {
+        .ownTable {
+          width: 100%;
+          .tableHead {
+            height: 90px;
+            line-height: 90px;
+            color: white;
+            background: linear-gradient(90deg, #8e77bd 0%, #c0858b 100%);
+            border: none;
+            font-size: 18px;
+            letter-spacing: 0.03em;
+            text-align: center;
+            width: 100%;
+            .resTable {
+              display: none;
+            }
+            ul {
+              display: flex;
+              li {
+                display: inline-block;
+                font-size: 18px;
+              }
+              .departureMain,
+              .arrivalMain {
+                width: 30%;
+                text-align: left;
+                padding-left: 50px;
+              }
+              .durationMain {
+                width: 15%;
+              }
+              .ecenomy,
+              .business,
+              .vip {
+                border-left: 1px solid #adadad;
+                width: 10%;
+              }
+            }
+          }
+          .tableBody {
+            .tableTd {
+              text-align: center;
+              background-color: rgb(255, 255, 255);
+              height: 100px;
+              border: 1px solid #adadad;
+              ul {
+                align-items: center;
+                display: flex;
+                height: 100%;
+                margin-bottom: 0px;
+                li {
+                  height: 100%;
+                  display: inline-block;
+                  h1 {
+                    font-size: 18px;
+                    margin: 0;
+                    margin-top: 5px;
+                    &:first-child {
+                      margin-top: 30px;
+                    }
+                  }
+                }
+                .from,
+                .to {
+                  width: 30%;
+                  text-align: left;
+                  padding-left: 107px;
+                }
+                .to {
+                  position: relative;
+                  &::before {
+                    position: absolute;
+                    content: "";
+                    width: 65%;
+                    height: 1.5px;
+                    background: #6f6e6e;
+                    top: 50%;
+                    left: -45%;
+                  }
+                }
+                .duration {
+                  width: 15%;
+                }
+                .newCheck {
+                  border-left: 1px solid #adadad;
+                  width: 10%;
+                  display: block;
+                  position: relative;
+                  cursor: pointer;
+                  height: 100%;
+                  line-height: 99px;
+                  font-size: 16px;
+                  user-select: none;
+                  input[type="radio"],
+                  input[type="checkbox"] {
+                    display: none;
+                    & + label {
+                      position: relative;
+                      // display: inline-block;
+                      width: 100%;
+                      padding-left: 54px;
+                      margin-right: 32px;
+                      cursor: pointer;
+                      /* padding: 41px 10px; */
+                      padding-top: 43px;
+                      display: flex;
+                      height: 100%;
+                      /* vertical-align: middle; */
+                      line-height: 16px;
+                      transition: all 0.2s ease-in-out;
+                      &:before,
+                      &:after {
+                        content: "";
+                        position: absolute;
+                        top: 42px;
+                        left: 33px;
+                        width: 16px;
+                        height: 16px;
+                        text-align: center;
+                        color: $grey2;
+                        font-family: Times;
+                        border-radius: 50%;
+                        transition: all 0.3s ease;
+                      }
+                    }
+                  }
+                  input[type="radio"] + label {
+                    &:before {
+                      box-shadow: inset 0 0 0 1px $borderColor,
+                        inset 0 0 0 16px $grey1;
+                    }
+                    &:hover:before {
+                      animation-duration: 0.5s;
+                      box-shadow: inset 0 0 0 1px $borderColor,
+                        inset 0 0 0 16px $grey1;
+                    }
+                  }
+                  input[type="radio"]:checked + label {
+                    &:before {
+                      animation-duration: 0.2s;
+                      animation-name: select-radio;
+                      animation-iteration-count: 1;
+                      animation-direction: Normal;
+                      box-shadow: 0 1px #b8b8b8, inset 0 0 0 3px #ffffff,
+                        inset 0 0 0 16px #02a4c8;
+                    }
+                  }
+                }
+              }
+              &:hover {
+                box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+              }
+            }
+          }
+        }
+        .price {
+          .tableHead {
+            ul {
+              .ecenomy {
+                width: 25%;
+              }
+            }
+          }
+          .tableBody {
+            .tableTd {
+              ul {
+                .newCheck {
+                  width: 25%;
+                  display: flex;
+                  align-items: center;
+                  input[type="radio"] + label {
+                    display: block;
+                    &:before {
+                      left: 140px;
+                    }
+                  }
+                }
+                .priceCheck {
+                  input[type="radio"],
+                  input[type="checkbox"] {
+                    & + label {
+                      &:before,
+                      &:after {
+                        top: 42%;
+                        left: 35%;
+                      }
+                    }
+                  }
+                  input[type="radio"] + label {
+                    padding-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  #firstTable {
+    padding: 0;
+    margin-top: 50px;
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .ownTable {
+            .tableHead {
+              height: 70px;
+              line-height: 70px;
+              .resTable {
+                display: block;
+              }
+              ul {
+                display: none;
+              }
+            }
+            .tableBody {
+              .tableTd {
+                height: 90px;
+                ul {
+                  li {
+                    h1 {
+                      font-size: 10px;
+                    }
+                  }
+                  .from,
+                  .to {
+                    padding-left: 0px;
+                    text-align: center;
+                    width: 20%;
+                  }
+                  .to {
+                    &::before {
+                      display: none;
+                    }
+                  }
+                  .duration {
+                    width: 20%;
+                  }
+                  .newCheck {
+                    width: 19%;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          width: 10px;
+                          height: 10px;
+                          top: 2%;
+                          left: 20%;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      font-size: 12px;
+                      padding: 0;
+                      display: inline-block;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  #firstTable {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .ownTable {
+            .tableBody {
+              .tableTd {
+                ul {
+                  .newCheck {
+                    line-height: 80px;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          top: 25%;
+                          left: 40%;
+                        }
+                      }
+                    }
+                  }
+                  .priceCheck {
+                    width: 40%;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          top: 65%;
+                          left: 47%;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      margin-right: 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .truckTable {
+            .tableBody {
+              .tableTd {
+                ul {
+                  .priceCheck {
+                    width: 40%;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          top: 65%;
+                          left: 47%;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      margin-right: 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #firstTable {
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .ownTable {
+            .tableHead {
+              .resTable {
+                display: none;
+              }
+              ul {
+                display: block;
+                display: flex;
+                height: 100%;
+                li {
+                  font-size: 11px;
+
+                  &:nth-child(1),
+                  &:nth-child(2),
+                  &:nth-child(3) {
+                    width: 20%;
+                  }
+                  &:nth-child(4),
+                  &:nth-child(5),
+                  &:nth-child(6) {
+                    width: 20%;
+                  }
+                }
+              }
+            }
+            .tableBody {
+              .tableTd {
+                ul {
+                  .newCheck {
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          left: 36px;
+                          top: 32px;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      padding-left: 10px;
+                      padding-top: 29px;
+                      font-size: 14px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .truckTable {
+            .tableHead {
+              ul {
+                display: block;
+                display: flex;
+                height: 100%;
+                li {
+                  font-size: 11px;
+                  &:nth-child(1),
+                  &:nth-child(2),
+                  &:nth-child(3) {
+                    width: 20%;
+                  }
+                }
+                li.lastEco {
+                  width: 40%;
+                }
+              }
+            }
+            .tableBody {
+              .tableTd {
+                ul {
+                  li {
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                      width: 20%;
+                    }
+                  }
+                  .priceCheck {
+                    width: 40%;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          top: 60%;
+                          left: 35%;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      padding-left: 0;
+                      margin-right: 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #firstTable {
+    margin-top: 50px;
+    padding: 0px 25px;
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .ownTable {
+            .tableBody {
+              .tableTd {
+                ul {
+                  .to {
+                    padding-left: 97px;
+                    &::before {
+                      display: none;
+                    }
+                  }
+                  .newCheck {
+                    width: 10.1%;
+                    font-size: 10px;
+                    padding-left: 5px;
+                    padding-top: 9px;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          width: 10px;
+                          height: 10px;
+                          left: 22px;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      margin-right: 0;
+                      padding-left: 34px;
+                      padding-top: 38px;
+                      font-size: 15px;
+                    }
+                    input[type="radio"]:checked + label {
+                      &:before {
+                        animation-duration: 0.2s;
+                        animation-name: select-radio;
+                        animation-iteration-count: 1;
+                        animation-direction: Normal;
+                        box-shadow: 0 1px #b8b8b8, inset 0 0 0 3px #ffffff,
+                          inset 0 0 0 16px #02a4c8;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          .truckTable {
+            .tableHead {
+              ul {
+                display: block;
+                display: flex;
+                height: 100%;
+                li {
+                  font-size: 12px;
+                  img {
+                    width: 20px;
+                  }
+                  &:nth-child(1),
+                  &:nth-child(2),
+                  &:nth-child(3) {
+                    width: 20%;
+                  }
+                }
+                li.lastEco {
+                  width: 40%;
+                }
+              }
+            }
+            .tableBody {
+              .tableTd {
+                ul {
+                  li {
+                    h1 {
+                      font-size: 18px;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                      width: 20%;
+                    }
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                      padding-left: 65px;
+                    }
+                  }
+                  .priceCheck {
+                    width: 40%;
+                    input[type="radio"],
+                    input[type="checkbox"] {
+                      & + label {
+                        &:before,
+                        &:after {
+                          top: 42%;
+                          left: 35%;
+                        }
+                      }
+                    }
+                    input[type="radio"] + label {
+                      padding-left: 0;
+                      margin-right: 0;
+                      padding-top: 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

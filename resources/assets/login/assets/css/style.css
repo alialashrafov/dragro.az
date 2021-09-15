@@ -1,0 +1,2919 @@
+* {
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  word-break: break-word;
+  font-family: AvertaRegular; }
+
+body {
+  background: #e5e5e5; }
+
+#not_found {
+  position: relative; }
+  #not_found .content {
+    text-align: center; }
+    #not_found .content .top {
+      font-family: Averta;
+      font-size: 36px;
+      color: #000000;
+      font-weight: 600; }
+    #not_found .content img {
+      margin: 0 auto;
+      display: block;
+      object-fit: contain; }
+    #not_found .content .bottom {
+      font-family: Averta;
+      font-size: 14px;
+      color: #000000; }
+
+.addPartClick {
+  position: fixed;
+  bottom: 3%;
+  right: 1%;
+  background: transparent;
+  width: fit-content;
+  text-align: center;
+  width: fit-content;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  z-index: 10000; }
+  .addPartClick a {
+    display: block;
+    height: 50px;
+    width: fit-content;
+    line-height: 50px; }
+    .addPartClick a span {
+      margin-right: 10px;
+      font-family: Averta;
+      font-size: 16px;
+      color: #0047a7;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s; }
+    .addPartClick a img {
+      object-fit: cover;
+      width: 45px;
+      border: 1px solid #0047a7;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      padding: 11px;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s; }
+  .addPartClick:hover {
+    border: none; }
+    .addPartClick:hover a span {
+      text-decoration: underline !important; }
+    .addPartClick:hover a img {
+      background: #0048a715; }
+
+.addPartClickMain .modal-dialog {
+  max-width: 650px; }
+  .addPartClickMain .modal-dialog .modal-content .modal-body form {
+    width: 100%; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .top {
+      font-family: Averta;
+      font-size: 13px;
+      color: #000000; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .closeButton {
+      display: none; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm {
+      padding: 25px;
+      background: #f9f9f9;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group {
+          width: calc(100% / 2.1);
+          position: relative; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .form-error {
+            position: absolute;
+            font-family: Averta;
+            font-size: 12px;
+            color: red; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect {
+            width: 100%;
+            border-radius: 0.25rem;
+            height: 45px;
+            line-height: 45px; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect select {
+              -webkit-appearance: none; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect .SelectBox {
+              border-radius: 0.25rem;
+              height: 100%;
+              line-height: 100%;
+              display: flex;
+              align-items: center;
+              border: 1px solid #e6e6e6 !important;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              -ms-box-shadow: none;
+              -o-box-shadow: none;
+              box-shadow: none;
+              background-size: 7px 6px;
+              background-repeat: no-repeat;
+              background-image: url(../img/downArrow.png);
+              background-position: 98% 50%; }
+              .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect .SelectBox label {
+                display: none; }
+              .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect .SelectBox input {
+                border-radius: 0.25rem; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect .optWrapper ul li label {
+              margin-bottom: 0;
+              height: 27px;
+              line-height: 27px; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .SumoSelect span {
+              font-family: Averta;
+              font-size: 14px;
+              color: #828282; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags {
+            display: block;
+            position: relative;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #e6e6e6;
+            -webkit-border-radius: 0.25rem;
+            -moz-border-radius: 0.25rem;
+            -ms-border-radius: 0.25rem;
+            -o-border-radius: 0.25rem;
+            border-radius: 0.25rem;
+            -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            background-size: 7px 6px;
+            background-repeat: no-repeat;
+            background-image: url(../img/downArrow.png);
+            background-position: 98% 50%;
+            z-index: 9999;
+            min-height: 45px;
+            cursor: pointer; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags .top {
+              padding: 0.375rem 0.75rem; }
+              .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags .top img {
+                width: 25px;
+                object-fit: cover; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags ul {
+              display: none;
+              width: 100%;
+              position: absolute;
+              top: 100%;
+              padding: 0.375rem 0.75rem;
+              background-color: #fff;
+              border: 1px solid #ced4da;
+              -webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+              -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+              -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+              -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+              transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+              .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags ul li {
+                margin: 5px 0; }
+                .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.select_picker .flags ul li img {
+                  width: 25px;
+                  object-fit: cover; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group label {
+            font-family: Averta;
+            font-size: 12px;
+            color: #828282; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group select,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group textarea {
+            font-family: Averta;
+            font-size: 14px;
+            color: #828282;
+            height: 45px;
+            line-height: 33px;
+            border: none;
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #e6e6e6; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group input option,
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group select option,
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group textarea option {
+              font-family: Averta;
+              font-size: 14px;
+              color: #828282; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .select2 .selection {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            outline: none;
+            background: white; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .select2 .selection .select2-selection {
+              text-align: center;
+              border: none;
+              outline: none;
+              display: flex;
+              width: 100%;
+              min-height: 45px;
+              align-items: center;
+              padding: 0.375rem 0.75rem;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1.5;
+              color: #495057;
+              background-color: #fff;
+              background-clip: padding-box;
+              border: 1px solid #e6e6e6;
+              -webkit-border-radius: 0.25rem;
+              -moz-border-radius: 0.25rem;
+              -ms-border-radius: 0.25rem;
+              -o-border-radius: 0.25rem;
+              border-radius: 0.25rem; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group textarea {
+            line-height: initial; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group input[type="date"]::-webkit-inner-spin-button {
+            display: none; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .info-input {
+            position: absolute;
+            bottom: 12px;
+            right: 10px;
+            cursor: pointer; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .info-input img {
+              object-fit: cover;
+              width: 17px; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .passport-img {
+            position: absolute;
+            bottom: -75px;
+            z-index: 1;
+            right: -250px;
+            cursor: pointer;
+            width: 135%;
+            display: none; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .passport-img img {
+              object-fit: cover;
+              width: 100%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .forgnPassport-img {
+            position: absolute;
+            bottom: -75px;
+            z-index: 1;
+            right: -250px;
+            cursor: pointer;
+            width: 135%;
+            display: none; }
+            .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .forgnPassport-img img {
+              object-fit: cover;
+              width: 100%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group.try-button button {
+            background: #e2e2e2;
+            border: 1px solid #e6e6e6;
+            box-sizing: border-box;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            font-family: Averta;
+            font-size: 15px;
+            width: 100%;
+            height: 45px;
+            line-height: 29px;
+            color: #393939;
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.fully-compact .form-group {
+          width: 100% !important; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.three-compact .form-group {
+          width: calc(100% / 3.1); }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.search-compact .form-group {
+          width: 100%; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.search-compact .add-file-form-passport-copy {
+          width: 100% !important; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.search-compact .add-file-form-passport-copy .textInput {
+            font-family: Averta;
+            color: #828282;
+            font-size: 14px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.name-compact .form-group {
+          width: calc(100% / 4.2); }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.last-compact .form-group {
+          width: calc(100% / 3.1); }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .phone-form .phone {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: white;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .phone-form .phone select {
+            width: 40%;
+            padding-left: 5px;
+            padding-right: 5px;
+            border: none;
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #e6e6e6;
+            border-right: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .phone-form .phone input {
+            width: 80%;
+            border: none;
+            outline: none;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -ms-box-shadow: none;
+            -o-box-shadow: none;
+            box-shadow: none;
+            border: 1px solid #e6e6e6;
+            border-left: none;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two {
+          overflow: hidden;
+          padding-right: 25px;
+          background-color: white;
+          background-clip: padding-box;
+          margin: 0 auto;
+          resize: vertical;
+          outline: none;
+          position: relative;
+          height: 45px;
+          line-height: 31px;
+          background-size: 15px 15px;
+          background-repeat: no-repeat;
+          background-image: url(../img/down.png);
+          background-position: 95% 50%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two input {
+            display: none; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two .downloadImg {
+            font-size: 12px;
+            font-family: Averta;
+            color: #828282;
+            font-size: 14px; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two img#logoMainPerson {
+            display: none;
+            width: auto;
+            height: 100%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two .nonevisible {
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two #button {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            display: inline-block;
+            color: white;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            width: 30px;
+            height: 50px;
+            line-height: 22px;
+            text-align: left; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file-blacklist .form-compact-two span.text {
+            color: gray;
+            font-weight: 500; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .form-group {
+          width: calc(100% / 3.1); }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two {
+          overflow: hidden;
+          padding-right: 25px;
+          background-color: white;
+          background-clip: padding-box;
+          margin: 0 auto;
+          resize: vertical;
+          outline: none;
+          position: relative;
+          height: 45px;
+          line-height: 31px;
+          background-size: 15px 15px;
+          background-repeat: no-repeat;
+          background-image: url(../img/down.png);
+          background-position: 95% 50%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two input, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one input,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two input {
+            display: none; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two .downloadImg, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one .downloadImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two .downloadPassportImg,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two .downloadImg {
+            font-size: 12px;
+            font-family: Averta;
+            color: #828282;
+            font-size: 14px; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two img#logoMainPerson, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one img#logoMainPerson,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two img#logoMainPerson {
+            display: none;
+            width: auto;
+            height: 100%; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two .nonevisible, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one .nonevisible,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two .nonevisible {
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two #button, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one #button,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two #button {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            display: inline-block;
+            color: white;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            width: 30px;
+            height: 50px;
+            line-height: 22px;
+            text-align: left; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two span.text, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport .form-compact-two span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form-passport-copy .form-compact-two span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-one span.text,
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .add-file-form .form-compact-two span.text {
+            color: gray;
+            font-weight: 500; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.last-compact {
+          display: none; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        user-select: none;
+        font-family: Averta;
+        font-size: 18px;
+        color: #5a5a5a;
+        width: fit-content; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck input:checked ~ .checkmark:after {
+            display: block; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck .checkmark {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          border: 1px solid #5b5b5b; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck .checkmark::after {
+            content: "";
+            position: absolute;
+            display: none; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck .checkmark::after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid #5b5b5b;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg); }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .saveButton {
+        text-align: center;
+        margin-top: 20px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .saveButton button {
+          background: #3da4ab;
+          border: 1px solid #e6e6e6;
+          box-sizing: border-box;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          font-family: Averta;
+          font-size: 20px;
+          width: 300px;
+          height: 45px;
+          line-height: 29px;
+          color: #ffffff;
+          -webkit-transition: all ease-in-out 0.2s;
+          -moz-transition: all ease-in-out 0.2s;
+          -ms-transition: all ease-in-out 0.2s;
+          -o-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s;
+          cursor: pointer; }
+          .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .saveButton button:hover {
+            background: #388388; }
+
+.dd .ddTitle .ddTitleText img,
+.dd .ddChild li img {
+  width: 30px;
+  height: 15px;
+  object-fit: cover;
+  margin-right: 0; }
+
+.dd {
+  width: 40px !important;
+  border: none; }
+  .dd .ddTitle {
+    background: transparent; }
+  .dd .divider {
+    border: none; }
+  .dd .ddChild {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .dd .ddChild img {
+      padding-right: 0; }
+    .dd .ddChild li img {
+      padding: 0;
+      margin: 0 auto; }
+
+.select2-search__field {
+  display: none; }
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: fit-content;
+  overflow-y: inherit; }
+
+.select2-container--open .select2-dropdown--below {
+  border: 1px solid #e6e6e6; }
+
+.select2-container--default
+.select2-selection--multiple
+.select2-selection__choice__remove {
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+  font-size: 12px; }
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+  margin: 0 auto;
+  font-family: openSans;
+  font-weight: 600;
+  color: black;
+  font-size: 20px; }
+  .select2-container .select2-selection--single .select2-selection__rendered.smallSize {
+    font-size: 14px;
+    margin: 0; }
+
+.select2-container--default .select2-results__option[aria-disabled="true"] {
+  color: blue; }
+
+.select2-container--default ul {
+  padding-bottom: 15px; }
+
+.select2-container--default ul li {
+  padding-left: 35px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: Averta;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282; }
+
+@media screen and (max-width: 991px) {
+  .addPartClick a span {
+    font-size: 14px; }
+  .addPartClick a img {
+    width: 32px;
+    padding: 7px; }
+
+  .select2-container {
+    z-index: 10000000; }
+
+  .xdsoft_noselect {
+    z-index: 2147483647; }
+
+  .addPartClickMain {
+    z-index: 10003; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .closeButton {
+      display: block;
+      position: absolute;
+      top: 6px;
+      right: 10px; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact {
+      flex-wrap: wrap; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group {
+        width: 100%; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .info-input {
+          bottom: 7px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .passport-img,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .forgnPassport-img {
+          bottom: -190px;
+          right: -18px;
+          width: 250px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group label {
+          font-size: 11px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group input,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group select,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group textarea {
+          height: 35px;
+          font-size: 12px; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.fully-compact {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.fully-compact .form-group {
+          width: 100%; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.three-compact {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.three-compact .form-group {
+          width: 100%; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.search-compact {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.search-compact .form-group {
+          width: 100%; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.name-compact {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.name-compact .form-group {
+          width: 100%; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.last-compact {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.last-compact .form-group {
+          width: 100%; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file {
+        flex-wrap: wrap; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .form-group {
+          width: 100%; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(1) .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(2) .form-compact-two, .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-one,
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file:nth-child(3) .form-compact-two {
+          height: 35px;
+          line-height: 22px; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck {
+      font-size: 14px; }
+      .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck .checkmark {
+        height: 20px;
+        width: 20px; }
+        .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .checkCar .labelCheck .checkmark::after {
+          left: 7px;
+          top: 3px; }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .saveButton button {
+      width: 100%;
+      font-size: 16px;
+      height: 35px;
+      line-height: 21px; } }
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  .addPartClick a span {
+    font-size: 14px; }
+  .addPartClick a img {
+    width: 32px;
+    padding: 7px; }
+
+  .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group {
+    width: calc(100% / 2.1); }
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .passport-img,
+    .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact .form-group .forgnPassport-img {
+      bottom: -250px;
+      right: 0;
+      width: 60%; }
+  .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.name-compact .form-group {
+    width: calc(100% / 2.1); }
+  .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.upload-file .form-group {
+    width: calc(100% / 3.1); }
+  .addPartClickMain .modal-dialog .modal-content .modal-body form .allForm .compact.last-compact .form-group {
+    width: calc(100% / 3.1); } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .addPartClick a span {
+    font-size: 16px; }
+  .addPartClick a img {
+    width: 40px;
+    padding: 10px; } }
+@font-face {
+  src: url(../fonts/AVerta.otf);
+  font-family: Averta; }
+@font-face {
+  src: url(../fonts/SFProDisplay.ttf);
+  font-family: SFProDisplay; }
+#main {
+  background-image: url(../img/main.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative; }
+  #main .container-fluid .row .col-md-12 .logo {
+    margin: 40px 0 0 60px; }
+    #main .container-fluid .row .col-md-12 .logo img {
+      object-fit: cover;
+      width: 150px;
+      height: 98px; }
+  #main .container-fluid .row .col-md-12 form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(20%, 35%);
+    -moz-transform: translate(20%, 35%);
+    -ms-transform: translate(20%, 35%);
+    -o-transform: translate(20%, 35%);
+    transform: translate(20%, 35%);
+    background: linear-gradient(179.73deg, #ffffff 47.18%, rgba(255, 255, 255, 0) 180.68%);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -o-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    width: 550px;
+    padding: 70px 80px;
+    padding-bottom: 100px; }
+    #main .container-fluid .row .col-md-12 form .head {
+      font-family: Averta;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-bottom: 45px; }
+    #main .container-fluid .row .col-md-12 form .form-group {
+      margin-bottom: 25px; }
+      #main .container-fluid .row .col-md-12 form .form-group input {
+        background: #ffffff;
+        border: 1px solid #828282;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        height: 70%;
+        width: 100%;
+        font-family: Averta;
+        color: black;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none;
+        font-size: 16px;
+        padding: 18.5px 18.5px; }
+      #main .container-fluid .row .col-md-12 form .form-group:nth-child(3) {
+        margin-bottom: 5px; }
+    #main .container-fluid .row .col-md-12 form .forgotPass {
+      text-align: right; }
+      #main .container-fluid .row .col-md-12 form .forgotPass a {
+        font-family: Averta;
+        font-size: 12px;
+        line-height: 14px;
+        color: #828282;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        transition: all linear 0.2s; }
+        #main .container-fluid .row .col-md-12 form .forgotPass a:hover {
+          text-decoration: underline !important; }
+    #main .container-fluid .row .col-md-12 form .myButton {
+      background: #3da4ab;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      width: 100%;
+      padding: 5px;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s; }
+      #main .container-fluid .row .col-md-12 form .myButton button {
+        font-family: Averta;
+        width: 100%;
+        font-size: 18px;
+        color: #ffffff; }
+      #main .container-fluid .row .col-md-12 form .myButton:hover {
+        background: #31767a; }
+
+@media screen and (max-width: 991px) {
+  #main .container-fluid .row .col-md-12 .logo {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center; }
+    #main .container-fluid .row .col-md-12 .logo img {
+      width: 115px;
+      height: 74px; }
+  #main .container-fluid .row .col-md-12 form {
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+    width: 290px;
+    padding: 45px 15px;
+    padding-bottom: 35px; }
+    #main .container-fluid .row .col-md-12 form .head {
+      font-size: 18px;
+      margin-bottom: 22px; }
+    #main .container-fluid .row .col-md-12 form .form-group input {
+      height: 40px; } }
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  #main .container-fluid .row .col-md-12 form {
+    width: 360px; }
+    #main .container-fluid .row .col-md-12 form .head {
+      font-size: 20px;
+      margin-bottom: 30px; }
+    #main .container-fluid .row .col-md-12 form .form-group input {
+      height: 50px; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #main .container-fluid .row .col-md-12 form {
+    -webkit-transform: translate(-30%, 60%);
+    -moz-transform: translate(-30%, 60%);
+    -ms-transform: translate(-30%, 60%);
+    -o-transform: translate(-30%, 60%);
+    transform: translate(-30%, 60%); } }
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #main .container-fluid .row .col-md-12 form {
+    -webkit-transform: translate(0%, 35%);
+    -moz-transform: translate(0%, 35%);
+    -ms-transform: translate(0%, 35%);
+    -o-transform: translate(0%, 35%);
+    transform: translate(0%, 35%); } }
+#navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10001;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+  padding: 0 20px;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  background: #0b0044; }
+  #navbar .container-fluid .row .col-md-12 nav {
+    padding-bottom: 0; }
+    #navbar .container-fluid .row .col-md-12 nav a.myNavbarBrand {
+      width: 10%; }
+      #navbar .container-fluid .row .col-md-12 nav a.myNavbarBrand img {
+        width: 65%;
+        -webkit-transition: all linear 0.2s;
+        -moz-transition: all linear 0.2s;
+        -ms-transition: all linear 0.2s;
+        -o-transition: all linear 0.2s;
+        transition: all linear 0.2s; }
+    #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav {
+      padding-bottom: 20px; }
+      #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem {
+        padding: 0 5px;
+        display: flex;
+        align-items: center;
+        position: initial;
+        height: 106px;
+        margin: 5px 0;
+        padding: 0px 0 0px 25px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px; }
+        #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem a {
+          display: flex;
+          align-items: center; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem a .img {
+            width: 20px;
+            height: 30px;
+            display: flex;
+            align-items: center; }
+            #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem a .img img {
+              -webkit-transition: all linear 0s;
+              -moz-transition: all linear 0s;
+              -ms-transition: all linear 0s;
+              -o-transition: all linear 0s;
+              transition: all linear 0s;
+              object-fit: cover; }
+              #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem a .img img:nth-of-type(2) {
+                display: none;
+                object-fit: cover;
+                -webkit-transition: all linear 0s;
+                -moz-transition: all linear 0s;
+                -ms-transition: all linear 0s;
+                -o-transition: all linear 0s;
+                transition: all linear 0s; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem a span {
+            font-family: Averta;
+            font-size: 18px;
+            line-height: 26px;
+            color: #ffffff;
+            margin-left: 20px;
+            -webkit-transition: all linear 0s;
+            -moz-transition: all linear 0s;
+            -ms-transition: all linear 0s;
+            -o-transition: all linear 0s;
+            transition: all linear 0s; }
+        #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.active_nav_res {
+          background: #e5e5e5; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.active_nav_res a .img img {
+            display: none; }
+            #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.active_nav_res a .img img:nth-of-type(2) {
+              display: block; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.active_nav_res a span {
+            color: #13036a; }
+        #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem:hover {
+          background: #e5e5e5; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem:hover a .img img {
+            display: none; }
+            #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem:hover a .img img:nth-of-type(2) {
+              display: block; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem:hover a span {
+            color: #13036a; }
+
+@media screen and (max-width: 991px) {
+  #navbar {
+    display: block;
+    padding: 0; }
+    #navbar .container-fluid .row .col-md-12 {
+      padding: 0; }
+      #navbar .container-fluid .row .col-md-12 nav {
+        padding: 0; }
+        #navbar .container-fluid .row .col-md-12 nav a.myNavbarBrand img {
+          width: 65px;
+          margin-left: 15px; }
+        #navbar .container-fluid .row .col-md-12 nav button {
+          color: white;
+          border: 1px solid white;
+          outline: none;
+          margin-right: 15px; }
+          #navbar .container-fluid .row .col-md-12 nav button span img {
+            width: 15px;
+            margin-top: -5px; }
+        #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse {
+          background: #0b0044;
+          padding-left: 15px; }
+          #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem {
+            height: fit-content; }
+            #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.dropdown {
+              padding: 0.5rem 5px; }
+              #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.dropdown a.myNavLink::before {
+                color: white !important; }
+              #navbar .container-fluid .row .col-md-12 nav .myNavbarCollapse ul.myNavbarNav li.myNavItem.dropdown::before {
+                display: none; } }
+#page .page-container {
+  padding-left: 0; }
+  #page .page-container .row .col-lg-2 {
+    padding-right: 0;
+    z-index: 1; }
+    #page .page-container .row .col-lg-2 .left {
+      background: #0b0044;
+      height: 110%; }
+      #page .page-container .row .col-lg-2 .left .head {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #ffffff;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        #page .page-container .row .col-lg-2 .left .head a img {
+          width: 110px; }
+      #page .page-container .row .col-lg-2 .left .parts {
+        margin: 20px 0; }
+        #page .page-container .row .col-lg-2 .left .parts .part {
+          margin: 10px 0;
+          margin-left: 15px;
+          padding: 10px 0 10px 25px;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          -webkit-transition: all linear 0s;
+          -moz-transition: all linear 0s;
+          -ms-transition: all linear 0s;
+          -o-transition: all linear 0s;
+          transition: all linear 0s; }
+          #page .page-container .row .col-lg-2 .left .parts .part a {
+            display: flex;
+            align-items: center; }
+            #page .page-container .row .col-lg-2 .left .parts .part a .img {
+              width: 20px;
+              height: 30px;
+              display: flex;
+              align-items: center; }
+              #page .page-container .row .col-lg-2 .left .parts .part a .img img {
+                -webkit-transition: all linear 0s;
+                -moz-transition: all linear 0s;
+                -ms-transition: all linear 0s;
+                -o-transition: all linear 0s;
+                transition: all linear 0s;
+                object-fit: cover; }
+                #page .page-container .row .col-lg-2 .left .parts .part a .img img:nth-of-type(2) {
+                  display: none;
+                  object-fit: cover;
+                  -webkit-transition: all linear 0s;
+                  -moz-transition: all linear 0s;
+                  -ms-transition: all linear 0s;
+                  -o-transition: all linear 0s;
+                  transition: all linear 0s; }
+            #page .page-container .row .col-lg-2 .left .parts .part a span {
+              font-family: Averta;
+              font-size: 18px;
+              line-height: 26px;
+              color: #ffffff;
+              margin-left: 20px;
+              -webkit-transition: all linear 0s;
+              -moz-transition: all linear 0s;
+              -ms-transition: all linear 0s;
+              -o-transition: all linear 0s;
+              transition: all linear 0s; }
+          #page .page-container .row .col-lg-2 .left .parts .part.active_left_nav {
+            background: #e5e5e5; }
+            #page .page-container .row .col-lg-2 .left .parts .part.active_left_nav a .img img {
+              display: none; }
+              #page .page-container .row .col-lg-2 .left .parts .part.active_left_nav a .img img:nth-of-type(2) {
+                display: block; }
+            #page .page-container .row .col-lg-2 .left .parts .part.active_left_nav a span {
+              color: #13036a; }
+          #page .page-container .row .col-lg-2 .left .parts .part:hover {
+            background: #e5e5e5; }
+            #page .page-container .row .col-lg-2 .left .parts .part:hover a .img img {
+              display: none; }
+              #page .page-container .row .col-lg-2 .left .parts .part:hover a .img img:nth-of-type(2) {
+                display: block; }
+            #page .page-container .row .col-lg-2 .left .parts .part:hover a span {
+              color: #13036a; }
+      #page .page-container .row .col-lg-2 .left #calendar {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100% !important;
+        font-family: "Lato", sans-serif;
+        padding: 0 25px; }
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays,
+      #page .page-container .row .col-lg-2 .left #calendar_content {
+        width: 100% !important; }
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays div {
+        display: inline-block;
+        vertical-align: top; }
+      #page .page-container .row .col-lg-2 .left #calendar_content,
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays,
+      #page .page-container .row .col-lg-2 .left #calendar_header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        float: left;
+        z-index: 10; }
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        background-color: #ffffff; }
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays div,
+      #page .page-container .row .col-lg-2 .left #calendar_content div {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        text-align: center;
+        color: #787878;
+        font-size: 12px; }
+      #page .page-container .row .col-lg-2 .left #calendar_weekdays div {
+        font-family: SFProDisplay;
+        color: #2f80ed !important;
+        height: 35px !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 600; }
+        #page .page-container .row .col-lg-2 .left #calendar_weekdays div:first-child {
+          color: #f88239 !important; }
+      #page .page-container .row .col-lg-2 .left #calendar_content {
+        -webkit-border-radius: 0px 0px 12px 12px;
+        -moz-border-radius: 0px 0px 12px 12px;
+        -ms-border-radius: 0px 0px 12px 12px;
+        -o-border-radius: 0px 0px 12px 12px;
+        border-radius: 0px 0px 12px 12px;
+        margin-top: 20px; }
+      #page .page-container .row .col-lg-2 .left #calendar_content div {
+        float: left;
+        color: #ffffff;
+        height: 35px !important;
+        width: calc(100% / 7) !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: SFProDisplay;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; }
+        #page .page-container .row .col-lg-2 .left #calendar_content div:nth-of-type(1) #page .page-container .row .col-lg-2 .left #calendar_content div:nth-of-type(8) {
+          color: #f88239 !important; }
+        #page .page-container .row .col-lg-2 .left #calendar_content div.today {
+          background: #ffffff !important;
+          color: #2f80ed !important;
+          font-weight: 600; }
+      #page .page-container .row .col-lg-2 .left #calendar_content div.blank {
+        display: none; }
+      #page .page-container .row .col-lg-2 .left #calendar_header {
+        width: 100%;
+        height: 37px;
+        text-align: center;
+        padding: 18px 0;
+        -webkit-border-radius: 12px 12px 0px 0px;
+        -moz-border-radius: 12px 12px 0px 0px;
+        -ms-border-radius: 12px 12px 0px 0px;
+        -o-border-radius: 12px 12px 0px 0px;
+        border-radius: 12px 12px 0px 0px;
+        background: none !important; }
+      #page .page-container .row .col-lg-2 .left #calendar_header h1 {
+        font-size: 1.5em;
+        color: white !important;
+        font-family: SFProDisplay;
+        text-align: left; }
+  #page .page-container .row .col-lg-10 {
+    padding-left: 0;
+    padding-right: 0; }
+    #page .page-container .row .col-lg-10 .head {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #0b0044;
+      height: 90px;
+      justify-content: center; }
+      #page .page-container .row .col-lg-10 .head form {
+        width: 80%; }
+        #page .page-container .row .col-lg-10 .head form input {
+          font-family: Averta;
+          color: black;
+          outline: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -ms-box-shadow: none;
+          -o-box-shadow: none;
+          box-shadow: none;
+          font-size: 16px;
+          background-size: 25px 25px;
+          background-repeat: no-repeat;
+          background-image: url(../img/searchInput.png);
+          background-position: 1% 50%;
+          padding-left: 45px;
+          border: none; }
+      #page .page-container .row .col-lg-10 .head .person {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        padding: 8px 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 15; }
+        #page .page-container .row .col-lg-10 .head .person .left {
+          width: 60px;
+          height: 60px; }
+          #page .page-container .row .col-lg-10 .head .person .left img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%; }
+        #page .page-container .row .col-lg-10 .head .person .right {
+          margin-left: 20px; }
+          #page .page-container .row .col-lg-10 .head .person .right .name {
+            font-family: Averta;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 600; }
+          #page .page-container .row .col-lg-10 .head .person .right .position {
+            font-family: Averta;
+            color: #000000;
+            font-size: 13px; }
+        #page .page-container .row .col-lg-10 .head .person::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+          border-radius: 20px;
+          background: #e5e5e5;
+          -webkit-transform: scaleX(0);
+          -moz-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          -o-transform: scaleX(0);
+          transform: scaleX(0);
+          transform-origin: 50%;
+          transition-property: transform;
+          transition-duration: 0.3s;
+          transition-timing-function: ease-out; }
+        #page .page-container .row .col-lg-10 .head .person:hover::before {
+          -webkit-transform: scaleX(1);
+          -moz-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+          -o-transform: scaleX(1);
+          transform: scaleX(1); }
+
+@media screen and (max-width: 991px) {
+  #page {
+    padding-top: calc(100% / 6); }
+    #page .page-container .row .left {
+      display: none; }
+    #page .page-container .row .col-lg-10 .head {
+      padding-left: 30px;
+      padding-right: 15px;
+      flex-wrap: wrap;
+      height: auto; }
+      #page .page-container .row .col-lg-10 .head form {
+        width: 100%; }
+      #page .page-container .row .col-lg-10 .head .person {
+        width: 100%;
+        justify-content: left; }
+        #page .page-container .row .col-lg-10 .head .person .left {
+          display: block; }
+        #page .page-container .row .col-lg-10 .head .person .right .name {
+          font-size: 16px; }
+        #page .page-container .row .col-lg-10 .head .person .right .position {
+          font-size: 15px; }
+        #page .page-container .row .col-lg-10 .head .person::before {
+          display: none; } }
+@media screen and (min-width: 500px) and (max-width: 991px) {
+  #page {
+    padding-top: calc(100% / 15); }
+    #page .page-container .row .col-lg-10 .head form {
+      width: 55%; }
+    #page .page-container .row .col-lg-10 .head .person {
+      justify-content: center;
+      width: 40%; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #page {
+    padding-top: calc(100% / 15); }
+    #page .page-container .row .col-lg-10 .head form {
+      width: 75%; }
+    #page .page-container .row .col-lg-10 .head .person {
+      justify-content: center;
+      width: 25%; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #page .page-container .row .col-lg-2 .left .parts .part {
+    margin-left: 5px;
+    padding: 5px 0 5px 10px; }
+    #page .page-container .row .col-lg-2 .left .parts .part a .img {
+      width: 5px; }
+      #page .page-container .row .col-lg-2 .left .parts .part a .img img {
+        width: 15px; }
+    #page .page-container .row .col-lg-2 .left .parts .part a span {
+      font-size: 13px; }
+  #page .page-container .row .col-lg-2 .left #calendar {
+    padding: 0 10px; }
+  #page .page-container .row .col-lg-2 .left #calendar_content div {
+    height: 20px !important;
+    margin: 3px 0; }
+  #page .page-container .row .col-lg-10 .head form {
+    width: 70%; }
+  #page .page-container .row .col-lg-10 .head .person {
+    width: 25%; } }
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #page .page-container .row .col-lg-2 .left .parts .part {
+    margin-left: 10px;
+    padding: 5px 0 5px 20px; }
+    #page .page-container .row .col-lg-2 .left .parts .part a .img {
+      width: 10px; }
+      #page .page-container .row .col-lg-2 .left .parts .part a .img img {
+        width: 20px; }
+    #page .page-container .row .col-lg-2 .left .parts .part a span {
+      font-size: 14px; }
+  #page .page-container .row .col-lg-2 .left #calendar {
+    padding: 0 10px; }
+  #page .page-container .row .col-lg-2 .left #calendar_content div {
+    height: 20px !important;
+    margin: 3px 0; }
+  #page .page-container .row .col-lg-10 .head form {
+    width: 75%; }
+  #page .page-container .row .col-lg-10 .head .person {
+    width: 20%; } }
+.personalModal {
+  z-index: 10002; }
+  .personalModal .modal-dialog {
+    max-width: 510px; }
+    .personalModal .modal-dialog .modal-content .modal-body {
+      display: flex;
+      padding: 40px 30px 30px 30px; }
+      .personalModal .modal-dialog .modal-content .modal-body .myModal {
+        width: 100%; }
+        .personalModal .modal-dialog .modal-content .modal-body .myModal form {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between; }
+          .personalModal .modal-dialog .modal-content .modal-body .myModal form .closeButton {
+            display: none; }
+          .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart {
+            text-align: center;
+            width: calc(100% / 2.2);
+            padding: 50px 0; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart img {
+              object-fit: cover;
+              width: 107px;
+              height: 107px;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              border-radius: 50%; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson {
+              font-weight: 400;
+              height: 28px;
+              line-height: 1.5;
+              border: 1px solid gray;
+              color: gray;
+              background-color: white;
+              background-clip: padding-box;
+              -webkit-transition: border-color 0.15s ease-in-out, box-shadow(0.15s ease-in-out);
+              -moz-transition: border-color 0.15s ease-in-out, box-shadow(0.15s ease-in-out);
+              -ms-transition: border-color 0.15s ease-in-out, box-shadow(0.15s ease-in-out);
+              -o-transition: border-color 0.15s ease-in-out, box-shadow(0.15s ease-in-out);
+              transition: border-color 0.15s ease-in-out, box-shadow(0.15s ease-in-out);
+              width: 50%;
+              margin: 0 auto;
+              margin-top: 15px;
+              padding: 4px 12px;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              -o-border-radius: 5px;
+              border-radius: 5px;
+              resize: vertical;
+              outline: none;
+              position: relative; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson input {
+                display: none; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson .changePhoto {
+                font-size: 12px;
+                font-family: Averta; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson img#logoMainPerson {
+                display: none;
+                width: auto;
+                height: 100%; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson .nonevisible {
+                width: 100%;
+                height: inherit;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                cursor: pointer; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson #button {
+                cursor: pointer;
+                outline: none;
+                border: none;
+                display: inline-block;
+                color: white;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 20px;
+                width: 30px;
+                height: 50px;
+                line-height: 22px;
+                text-align: left; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson span.text {
+                color: gray;
+                font-weight: 500; }
+          .personalModal .modal-dialog .modal-content .modal-body .myModal form .compact {
+            width: calc(100% / 2.2); }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .compact .form-group {
+              margin-bottom: 6px; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .compact .form-group label {
+                margin-bottom: 0px;
+                font-size: 13px;
+                font-family: Averta; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .compact .form-group input {
+                border: 1px solid #d0d0d0;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                border-radius: 5px;
+                color: #000000;
+                font-size: 14px;
+                font-family: Averta;
+                outline: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                -ms-box-shadow: none;
+                -o-box-shadow: none;
+                box-shadow: none; }
+                .personalModal .modal-dialog .modal-content .modal-body .myModal form .compact .form-group input::placeholder {
+                  color: #7d8087;
+                  font-size: 12px; }
+          .personalModal .modal-dialog .modal-content .modal-body .myModal form .inside-form {
+            width: calc(100% / 2.2);
+            margin-bottom: 6px; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .inside-form label {
+              margin-bottom: 0px;
+              font-size: 13px;
+              font-family: Averta; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .inside-form input {
+              border: 1px solid #d0d0d0;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              -o-border-radius: 5px;
+              border-radius: 5px;
+              color: #000000;
+              font-size: 14px;
+              font-family: Averta;
+              outline: none;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              -ms-box-shadow: none;
+              -o-box-shadow: none;
+              box-shadow: none; }
+              .personalModal .modal-dialog .modal-content .modal-body .myModal form .inside-form input::placeholder {
+                color: #7d8087;
+                font-size: 12px; }
+          .personalModal .modal-dialog .modal-content .modal-body .myModal form .saveButton {
+            background: #3da4ab;
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            color: white;
+            font-size: 14px;
+            font-family: openSans;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 35px;
+            width: 100%;
+            margin-top: 30px;
+            font-family: Averta;
+            -webkit-transition: all ease-in-out 0.2s;
+            -moz-transition: all ease-in-out 0.2s;
+            -ms-transition: all ease-in-out 0.2s;
+            -o-transition: all ease-in-out 0.2s;
+            transition: all ease-in-out 0.2s;
+            cursor: pointer; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .saveButton button {
+              color: inherit;
+              display: block; }
+            .personalModal .modal-dialog .modal-content .modal-body .myModal form .saveButton:hover {
+              background: #388388; }
+
+@media screen and (max-width: 991px) {
+  .personalModal .modal-dialog .modal-content .modal-body .myModal form .closeButton {
+    display: block;
+    position: absolute;
+    top: 6px;
+    right: 10px; }
+  .personalModal .modal-dialog .modal-content .modal-body .myModal form .picturePart .logoMainPerson {
+    width: 70%; } }
+#allCahrts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 40px; }
+  #allCahrts .singleChart {
+    width: calc(100% / 4.2);
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s; }
+    #allCahrts .singleChart .chart {
+      width: 25%; }
+      #allCahrts .singleChart .chart canvas {
+        height: 100% !important;
+        width: 100% !important; }
+    #allCahrts .singleChart .content {
+      width: 75%; }
+      #allCahrts .singleChart .content .num {
+        font-family: Averta;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: right; }
+      #allCahrts .singleChart .content .desc {
+        text-align: right;
+        font-family: Averta;
+        font-size: 20px;
+        font-weight: 600; }
+    #allCahrts .singleChart:nth-child(1) {
+      background: #f7e2d5;
+      border: 1px solid #f88239;
+      -webkit-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -moz-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -ms-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -o-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35); }
+      #allCahrts .singleChart:nth-child(1) .content .num,
+      #allCahrts .singleChart:nth-child(1) .content .desc {
+        color: #f98843; }
+    #allCahrts .singleChart:nth-child(2) {
+      background: #ecd9fa;
+      border: 1px solid #bb6bd9;
+      -webkit-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -moz-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -ms-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -o-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35); }
+      #allCahrts .singleChart:nth-child(2) .content .num,
+      #allCahrts .singleChart:nth-child(2) .content .desc {
+        color: #bb6bd9; }
+    #allCahrts .singleChart:nth-child(3) {
+      background: #f8efc9;
+      border: 1px solid #dab412;
+      -webkit-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -moz-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -ms-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -o-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35); }
+      #allCahrts .singleChart:nth-child(3) .content .num,
+      #allCahrts .singleChart:nth-child(3) .content .desc {
+        color: #dfb500; }
+    #allCahrts .singleChart:nth-child(4) {
+      background: #d8eaf7;
+      border: 1px solid #25a3fe;
+      -webkit-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -moz-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -ms-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      -o-box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35);
+      box-shadow: 0px 10px 15px rgba(174, 174, 174, 0.35); }
+      #allCahrts .singleChart:nth-child(4) .content .num,
+      #allCahrts .singleChart:nth-child(4) .content .desc {
+        color: #4fb5ff; }
+    #allCahrts .singleChart:hover {
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05); }
+      #allCahrts .singleChart:hover:nth-child(1) {
+        -webkit-box-shadow: 0px 10px 15px rgba(248, 131, 58, 0.308);
+        -moz-box-shadow: 0px 10px 15px rgba(248, 131, 58, 0.308);
+        -ms-box-shadow: 0px 10px 15px rgba(248, 131, 58, 0.308);
+        -o-box-shadow: 0px 10px 15px rgba(248, 131, 58, 0.308);
+        box-shadow: 0px 10px 15px rgba(248, 131, 58, 0.308); }
+      #allCahrts .singleChart:hover:nth-child(2) {
+        -webkit-box-shadow: 0px 10px 15px rgba(188, 109, 217, 0.308);
+        -moz-box-shadow: 0px 10px 15px rgba(188, 109, 217, 0.308);
+        -ms-box-shadow: 0px 10px 15px rgba(188, 109, 217, 0.308);
+        -o-box-shadow: 0px 10px 15px rgba(188, 109, 217, 0.308);
+        box-shadow: 0px 10px 15px rgba(188, 109, 217, 0.308); }
+      #allCahrts .singleChart:hover:nth-child(3) {
+        -webkit-box-shadow: 0px 10px 15px rgba(217, 180, 18, 0.308);
+        -moz-box-shadow: 0px 10px 15px rgba(217, 180, 18, 0.308);
+        -ms-box-shadow: 0px 10px 15px rgba(217, 180, 18, 0.308);
+        -o-box-shadow: 0px 10px 15px rgba(217, 180, 18, 0.308);
+        box-shadow: 0px 10px 15px rgba(217, 180, 18, 0.308); }
+      #allCahrts .singleChart:hover:nth-child(4) {
+        -webkit-box-shadow: 0px 10px 15px rgba(37, 163, 254, 0.308);
+        -moz-box-shadow: 0px 10px 15px rgba(37, 163, 254, 0.308);
+        -ms-box-shadow: 0px 10px 15px rgba(37, 163, 254, 0.308);
+        -o-box-shadow: 0px 10px 15px rgba(37, 163, 254, 0.308);
+        box-shadow: 0px 10px 15px rgba(37, 163, 254, 0.308); }
+
+.twoCharts .singleChart {
+  width: calc(100% / 2.1) !important; }
+  .twoCharts .singleChart .chart {
+    width: 13% !important; }
+
+@media screen and (max-width: 991px) {
+  #allCahrts {
+    padding-left: 15px;
+    margin: 30px 0px;
+    flex-wrap: wrap; }
+    #allCahrts .singleChart {
+      width: calc(100% / 2.1);
+      height: 270px;
+      margin-top: 15px;
+      flex-wrap: wrap; }
+      #allCahrts .singleChart .chart {
+        width: 100%; }
+      #allCahrts .singleChart .content {
+        width: 100%; }
+        #allCahrts .singleChart .content .num {
+          font-size: 20px;
+          text-align: center; }
+        #allCahrts .singleChart .content .desc {
+          font-size: 15px;
+          text-align: center; }
+
+  .twoCharts .singleChart .chart {
+    width: 100% !important; } }
+@media screen and (min-width: 500px) and (max-width: 991px) {
+  #allCahrts .singleChart {
+    height: 260px;
+    width: calc(100% / 4.2); }
+    #allCahrts .singleChart .chart {
+      width: 100%; }
+    #allCahrts .singleChart .content .num {
+      font-size: 16px; }
+    #allCahrts .singleChart .content .desc {
+      font-size: 15px; }
+
+  .twoCharts .singleChart .chart {
+    width: 50% !important;
+    margin: 0 auto; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #allCahrts .singleChart {
+    height: 150px; }
+    #allCahrts .singleChart .chart {
+      width: 35%; }
+    #allCahrts .singleChart .content {
+      width: 65%; }
+      #allCahrts .singleChart .content .num {
+        text-align: right; }
+      #allCahrts .singleChart .content .desc {
+        text-align: right; }
+
+  .twoCharts .singleChart .chart {
+    width: 25% !important; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #allCahrts .singleChart {
+    height: 150px; }
+    #allCahrts .singleChart .chart {
+      width: 40%; }
+    #allCahrts .singleChart .content {
+      width: 55%; }
+      #allCahrts .singleChart .content .num {
+        text-align: right;
+        font-size: 22px; }
+      #allCahrts .singleChart .content .desc {
+        text-align: right;
+        font-size: 15px; } }
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #allCahrts .singleChart {
+    height: 80px; }
+    #allCahrts .singleChart .chart {
+      width: 35%; }
+    #allCahrts .singleChart .content {
+      width: 65%; }
+      #allCahrts .singleChart .content .num {
+        text-align: right;
+        font-size: 20px; }
+      #allCahrts .singleChart .content .desc {
+        text-align: right;
+        font-size: 13px; } }
+#guests {
+  margin: 40px; }
+  #guests .guests {
+    display: flex;
+    align-items: center; }
+    #guests .guests .first,
+    #guests .guests .second {
+      width: calc(100% / 5.1);
+      background: #ffffff;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s;
+      height: 55px;
+      line-height: 55px; }
+      #guests .guests .first a,
+      #guests .guests .second a {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center; }
+        #guests .guests .first a img,
+        #guests .guests .second a img {
+          width: 18px;
+          object-fit: cover; }
+        #guests .guests .first a span,
+        #guests .guests .second a span {
+          color: #0047a7;
+          font-size: 15px;
+          font-family: Averta; }
+      #guests .guests .first:hover,
+      #guests .guests .second:hover {
+        border: 1px solid #0047a7; }
+    #guests .guests .second {
+      margin-left: 30px; }
+      #guests .guests .second a img {
+        width: 30px; }
+    #guests .guests .third {
+      width: calc(100% / 5.1);
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      border-radius: 10px;
+      background: #ffffff;
+      -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s;
+      margin-left: auto;
+      height: 55px; }
+      #guests .guests .third input {
+        width: 100%;
+        border: none;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-radius: 10px;
+        height: 100%;
+        padding-left: 53px;
+        padding-top: 10px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-image: url(../img/calendar.png);
+        background-position: 5% 50%;
+        color: #0047a7;
+        font-size: 16px;
+        font-family: Averta;
+        cursor: pointer;
+        outline: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none; }
+      #guests .guests .third:hover {
+        border: 1px solid #0047a7; }
+      #guests .guests .third.newReg {
+        background: transparent;
+        background: transparent;
+        width: fit-content;
+        text-align: center;
+        width: fit-content;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        -o-box-shadow: none;
+        box-shadow: none; }
+        #guests .guests .third.newReg a {
+          display: block;
+          height: 100%;
+          height: 50px;
+          width: fit-content;
+          line-height: 50px; }
+          #guests .guests .third.newReg a span {
+            margin-right: 10px;
+            font-family: Averta;
+            font-size: 13px;
+            color: #0047a7;
+            -webkit-transition: all linear 0.2s;
+            -moz-transition: all linear 0.2s;
+            -ms-transition: all linear 0.2s;
+            -o-transition: all linear 0.2s;
+            transition: all linear 0.2s; }
+          #guests .guests .third.newReg a img {
+            object-fit: cover;
+            width: 40px;
+            border: 1px solid #0047a7;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            padding: 12px;
+            -webkit-transition: all linear 0.2s;
+            -moz-transition: all linear 0.2s;
+            -ms-transition: all linear 0.2s;
+            -o-transition: all linear 0.2s;
+            transition: all linear 0.2s; }
+        #guests .guests .third.newReg:hover {
+          border: none; }
+          #guests .guests .third.newReg:hover a span {
+            text-decoration: underline !important; }
+          #guests .guests .third.newReg:hover a img {
+            background: #0048a715; }
+
+.xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
+  display: none !important; }
+
+.xdsoft_datetimepicker * {
+  font-family: Averta; }
+
+@media screen and (max-width: 991px) {
+  #guests {
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px !important; }
+    #guests .guests {
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      #guests .guests .first,
+      #guests .guests .second {
+        width: calc(100% / 2.2);
+        padding: 10px 0;
+        height: 110px;
+        margin: 10px 0; }
+        #guests .guests .first a,
+        #guests .guests .second a {
+          flex-wrap: wrap; }
+          #guests .guests .first a span,
+          #guests .guests .second a span {
+            width: 100%;
+            text-align: center;
+            line-height: 22px;
+            margin-top: 10px; }
+      #guests .guests .second {
+        margin-left: 0; }
+      #guests .guests .third {
+        width: 100%; } }
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  #guests .guests .first,
+  #guests .guests .second {
+    width: calc(100% / 3.1);
+    height: 55px; }
+    #guests .guests .first a img,
+    #guests .guests .second a img {
+      width: 13px; }
+    #guests .guests .first a span,
+    #guests .guests .second a span {
+      margin-top: 0px; }
+  #guests .guests .second a img {
+    width: 20px; }
+  #guests .guests .third {
+    width: calc(100% / 3.1);
+    margin-left: 0; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #guests .guests .first,
+  #guests .guests .second {
+    width: calc(100% / 4.1); }
+  #guests .guests .second {
+    margin-left: 30px; }
+  #guests .guests .third {
+    width: calc(100% / 4.1);
+    margin-left: auto; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #guests .guests {
+    justify-content: space-between; }
+    #guests .guests .first,
+    #guests .guests .second {
+      width: calc(100% / 3.1); }
+    #guests .guests .second {
+      margin-left: 0; }
+    #guests .guests .third {
+      width: calc(100% / 3.1);
+      margin-left: 0; } }
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #guests .guests {
+    justify-content: space-between; }
+    #guests .guests .first,
+    #guests .guests .second {
+      width: calc(100% / 4.1); }
+      #guests .guests .first a img,
+      #guests .guests .second a img {
+        width: 16px; }
+      #guests .guests .first a span,
+      #guests .guests .second a span {
+        font-size: 14px; }
+    #guests .guests .second {
+      margin-left: 20px; }
+      #guests .guests .second a img {
+        width: 25px; }
+    #guests .guests .third {
+      width: calc(100% / 4.1);
+      margin-left: auto; } }
+#boxes {
+  margin: 40px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap; }
+  #boxes .box {
+    background: #ffffff;
+    margin-top: 40px;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    padding: 40px 30px 50px 35px;
+    width: calc(100% / 4.2);
+    margin-right: calc(4.4% / 4);
+    position: relative;
+    -webkit-transition: all linear 0.1s;
+    -moz-transition: all linear 0.1s;
+    -ms-transition: all linear 0.1s;
+    -o-transition: all linear 0.1s;
+    transition: all linear 0.1s; }
+    #boxes .box .personCame {
+      min-width: 30%;
+      position: absolute;
+      top: -29px;
+      left: -1px;
+      text-align: center;
+      background: #ffffff;
+      border: 1px solid #e6e6e6;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom: none;
+      font-family: Averta;
+      font-size: 13px;
+      padding: 5px 8px; }
+    #boxes .box .edit {
+      width: 30%;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      text-align: right; }
+      #boxes .box .edit img {
+        width: 5px;
+        object-fit: cover;
+        cursor: pointer; }
+      #boxes .box .edit .editPart {
+        width: 100px;
+        position: absolute;
+        top: 30px;
+        right: -95px;
+        background: #ffffff;
+        border: 1px solid #e6e6e6;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -ms-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -o-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        padding-right: 5px;
+        display: none;
+        z-index: 10; }
+        #boxes .box .edit .editPart.mouseOut-editPart {
+          z-index: 0; }
+        #boxes .box .edit .editPart.blackListEditPart {
+          width: 150px; }
+          #boxes .box .edit .editPart.blackListEditPart input {
+            height: 25px;
+            margin-top: 5px;
+            background: #f7f7f7;
+            -webkit-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 1px 0px 1px rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            font-family: Averta;
+            padding-bottom: 10px;
+            color: #000000;
+            outline: none;
+            border: none;
+            font-size: 12px; }
+            #boxes .box .edit .editPart.blackListEditPart input::placeholder {
+              color: #ababab;
+              font-size: 12px; }
+        #boxes .box .edit .editPart a {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          text-align: left;
+          color: #000000;
+          font-family: Averta;
+          font-size: 12px;
+          margin: 3px 0;
+          -webkit-transition: all linear 0.1s;
+          -moz-transition: all linear 0.1s;
+          -ms-transition: all linear 0.1s;
+          -o-transition: all linear 0.1s;
+          transition: all linear 0.1s; }
+          #boxes .box .edit .editPart a img {
+            object-fit: cover;
+            width: 8px;
+            margin-right: 5px; }
+          #boxes .box .edit .editPart a:nth-child(1) {
+            color: #2f80ed; }
+          #boxes .box .edit .editPart a:hover {
+            text-decoration: underline !important; }
+    #boxes .box .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      #boxes .box .top .left {
+        width: 35%;
+        height: 90px; }
+        #boxes .box .top .left img {
+          object-fit: cover;
+          width: 75px;
+          height: 75px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          border-radius: 50%; }
+      #boxes .box .top.losted-top .right {
+        margin: 0 auto; }
+        #boxes .box .top.losted-top .right .buttons select {
+          outline: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -ms-box-shadow: none;
+          -o-box-shadow: none;
+          box-shadow: none;
+          font-family: Averta;
+          font-weight: 600;
+          font-size: 13px;
+          color: #f2994a;
+          border: 1px solid #f2994a;
+          text-align: center; }
+          #boxes .box .top.losted-top .right .buttons select option {
+            font-family: Averta; }
+        #boxes .box .top.losted-top .right .buttons .finedThing,
+        #boxes .box .top.losted-top .right .buttons .givenOwner,
+        #boxes .box .top.losted-top .right .buttons .enterance {
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          border: 1px solid #30a7fe;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+          width: 100%;
+          height: 35px;
+          font-size: 13px;
+          font-family: Averta;
+          color: #30a7fe;
+          -webkit-transition: all linear 0.1s;
+          -moz-transition: all linear 0.1s;
+          -ms-transition: all linear 0.1s;
+          -o-transition: all linear 0.1s;
+          transition: all linear 0.1s;
+          padding: 0px 5px; }
+          #boxes .box .top.losted-top .right .buttons .finedThing:hover,
+          #boxes .box .top.losted-top .right .buttons .givenOwner:hover,
+          #boxes .box .top.losted-top .right .buttons .enterance:hover {
+            color: white;
+            background: #30a7fe; }
+        #boxes .box .top.losted-top .right .buttons .givenOwner {
+          border-color: #dab412;
+          color: #dab412; }
+          #boxes .box .top.losted-top .right .buttons .givenOwner:hover {
+            color: white;
+            background: #dab412; }
+        #boxes .box .top.losted-top .right .buttons .enterance {
+          border-color: #27ae60;
+          color: #27ae60; }
+          #boxes .box .top.losted-top .right .buttons .enterance:hover {
+            color: white;
+            background: #27ae60; }
+      #boxes .box .top .right {
+        width: 55%;
+        height: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+        #boxes .box .top .right.auto-height {
+          height: auto; }
+        #boxes .box .top .right .time {
+          background: #0047a7;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          height: 35px; }
+          #boxes .box .top .right .time span {
+            font-family: Averta;
+            font-size: 13px; }
+          #boxes .box .top .right .time.expired-time {
+            background: #f88239; }
+          #boxes .box .top .right .time.have-time {
+            background: #bb6bd9; }
+          #boxes .box .top .right .time.yellow-time {
+            background: #dab412; }
+          #boxes .box .top .right .time.green-time {
+            background: #27ae60; }
+          #boxes .box .top .right .time.orange-time {
+            background: #f88239; }
+          #boxes .box .top .right .time.black-time {
+            background: #000000; }
+        #boxes .box .top .right .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%; }
+          #boxes .box .top .right .buttons.buttons-trucks .full {
+            width: 100%;
+            margin-top: 5px;
+            display: flex;
+            flex-wrap: wrap; }
+            #boxes .box .top .right .buttons.buttons-trucks .full .label {
+              font-family: Averta;
+              font-size: 14px;
+              color: #828282; }
+            #boxes .box .top .right .buttons.buttons-trucks .full .tackTime,
+            #boxes .box .top .right .buttons.buttons-trucks .full .trailerTime {
+              background: #eb5757;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              -ms-border-radius: 5px;
+              -o-border-radius: 5px;
+              border-radius: 5px;
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              width: 100%;
+              height: 35px;
+              cursor: pointer; }
+              #boxes .box .top .right .buttons.buttons-trucks .full .tackTime span,
+              #boxes .box .top .right .buttons.buttons-trucks .full .trailerTime span {
+                font-family: Averta;
+                font-size: 13px; }
+                #boxes .box .top .right .buttons.buttons-trucks .full .tackTime span:last-child,
+                #boxes .box .top .right .buttons.buttons-trucks .full .trailerTime span:last-child {
+                  margin-left: 5px; }
+              #boxes .box .top .right .buttons.buttons-trucks .full .tackTime.clicked,
+              #boxes .box .top .right .buttons.buttons-trucks .full .trailerTime.clicked {
+                background: #0047a7;
+                cursor: default; }
+                #boxes .box .top .right .buttons.buttons-trucks .full .tackTime.clicked span,
+                #boxes .box .top .right .buttons.buttons-trucks .full .trailerTime.clicked span {
+                  display: block !important; }
+            #boxes .box .top .right .buttons.buttons-trucks .full a {
+              display: inline-block;
+              height: 30px;
+              line-height: 30px;
+              min-width: 105px; }
+          #boxes .box .top .right .buttons a.enter {
+            display: block;
+            width: calc(100% / 2.2);
+            background: #ffffff;
+            border: 1px solid #27ae60;
+            box-sizing: border-box;
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            font-family: Averta;
+            font-size: 12px;
+            color: #6fcf97;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            -webkit-transition: all ease-in-out 0.2s;
+            -moz-transition: all ease-in-out 0.2s;
+            -ms-transition: all ease-in-out 0.2s;
+            -o-transition: all ease-in-out 0.2s;
+            transition: all ease-in-out 0.2s; }
+            #boxes .box .top .right .buttons a.enter:hover {
+              background: #6fcf97;
+              color: #ffffff; }
+            #boxes .box .top .right .buttons a.enter.already-enter {
+              background: #27ae60;
+              color: #ffffff; }
+          #boxes .box .top .right .buttons a.out {
+            display: block;
+            width: calc(100% / 2.2);
+            background: #ffffff;
+            border: 1px solid #eb5757;
+            box-sizing: border-box;
+            -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            font-family: Averta;
+            font-size: 12px;
+            color: #eb5757;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            -webkit-transition: all ease-in-out 0.2s;
+            -moz-transition: all ease-in-out 0.2s;
+            -ms-transition: all ease-in-out 0.2s;
+            -o-transition: all ease-in-out 0.2s;
+            transition: all ease-in-out 0.2s; }
+            #boxes .box .top .right .buttons a.out:hover {
+              background: #eb5757;
+              color: #ffffff; }
+            #boxes .box .top .right .buttons a.out.already-out {
+              background: #eb5757;
+              color: #ffffff; }
+    #boxes .box ul.info {
+      margin: 0;
+      margin-top: 15px; }
+      #boxes .box ul.info li {
+        font-family: Averta;
+        font-size: 14px;
+        color: #828282;
+        margin: 5px 0; }
+        #boxes .box ul.info li span {
+          font-family: Averta;
+          color: #202020; }
+      #boxes .box ul.info .lowHigh {
+        display: none; }
+    #boxes .box .arrowDown {
+      width: 15px;
+      position: absolute;
+      bottom: 5px;
+      right: 11px; }
+      #boxes .box .arrowDown a img {
+        width: 100%;
+        object-fit: cover;
+        -webkit-transition: all linear 0.3s;
+        -moz-transition: all linear 0.3s;
+        -ms-transition: all linear 0.3s;
+        -o-transition: all linear 0.3s;
+        transition: all linear 0.3s; }
+        #boxes .box .arrowDown a img.goUpArrow {
+          -webkit-transform: rotate(185deg);
+          -moz-transform: rotate(185deg);
+          -ms-transform: rotate(185deg);
+          -o-transform: rotate(185deg);
+          transform: rotate(185deg);
+          -webkit-transition: all linear 0.3s;
+          -moz-transition: all linear 0.3s;
+          -ms-transition: all linear 0.3s;
+          -o-transition: all linear 0.3s;
+          transition: all linear 0.3s; }
+    #boxes .box:hover {
+      -webkit-transform: scale(1.01);
+      -moz-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      -o-transform: scale(1.01);
+      transform: scale(1.01);
+      z-index: 11; }
+    #boxes .box:nth-child(4) .edit .editPart {
+      right: -4px; }
+  #boxes:nth-child(1) .box {
+    margin-top: 50px; }
+
+.group-guest-part {
+  display: block !important;
+  background: rgba(11, 0, 68, 0.2);
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 50px; }
+  .group-guest-part .top-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px; }
+    .group-guest-part .top-group-head .left {
+      font-family: Averta;
+      font-size: 25px;
+      line-height: 34px;
+      letter-spacing: 0.03em;
+      color: #0b0044; }
+      .group-guest-part .top-group-head .left span {
+        font-family: Averta; }
+    .group-guest-part .top-group-head .right {
+      width: 150px;
+      height: 90px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; }
+      .group-guest-part .top-group-head .right .time {
+        background: #0047a7;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 35px; }
+        .group-guest-part .top-group-head .right .time span {
+          font-family: Averta;
+          font-size: 13px; }
+        .group-guest-part .top-group-head .right .time.yellow-time {
+          background: #dab412; }
+        .group-guest-part .top-group-head .right .time.green-time {
+          background: #27ae60; }
+        .group-guest-part .top-group-head .right .time.orange-time {
+          background: #f88239; }
+      .group-guest-part .top-group-head .right .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; }
+        .group-guest-part .top-group-head .right .buttons a.enter {
+          display: block;
+          width: calc(100% / 2.2);
+          background: #ffffff;
+          border: 1px solid #27ae60;
+          box-sizing: border-box;
+          -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          font-family: Averta;
+          font-size: 12px;
+          color: #6fcf97;
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+          -webkit-transition: all ease-in-out 0.2s;
+          -moz-transition: all ease-in-out 0.2s;
+          -ms-transition: all ease-in-out 0.2s;
+          -o-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s; }
+          .group-guest-part .top-group-head .right .buttons a.enter:hover {
+            background: #6fcf97;
+            color: #ffffff; }
+          .group-guest-part .top-group-head .right .buttons a.enter.already-enter {
+            background: #27ae60;
+            color: #ffffff; }
+        .group-guest-part .top-group-head .right .buttons a.out {
+          display: block;
+          width: calc(100% / 2.2);
+          background: #ffffff;
+          border: 1px solid #eb5757;
+          box-sizing: border-box;
+          -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          border-radius: 5px;
+          font-family: Averta;
+          font-size: 12px;
+          color: #eb5757;
+          text-align: center;
+          height: 35px;
+          line-height: 35px;
+          -webkit-transition: all ease-in-out 0.2s;
+          -moz-transition: all ease-in-out 0.2s;
+          -ms-transition: all ease-in-out 0.2s;
+          -o-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s; }
+          .group-guest-part .top-group-head .right .buttons a.out:hover {
+            background: #eb5757;
+            color: #ffffff; }
+          .group-guest-part .top-group-head .right .buttons a.out.already-out {
+            background: #eb5757;
+            color: #ffffff; }
+    .group-guest-part .top-group-head .right_button button {
+      border: 1px solid #eb5757;
+      color: #eb5757;
+      background: white;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 130px;
+      height: 35px;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      -o-box-shadow: none;
+      box-shadow: none;
+      font-family: Averta;
+      -webkit-transition: all linear 0.3s;
+      -moz-transition: all linear 0.3s;
+      -ms-transition: all linear 0.3s;
+      -o-transition: all linear 0.3s;
+      transition: all linear 0.3s; }
+      .group-guest-part .top-group-head .right_button button:hover {
+        background: #eb5757;
+        color: white; }
+  .group-guest-part .bottom-group-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px; }
+    .group-guest-part .bottom-group-head .left a {
+      font-family: Averta;
+      font-size: 16px;
+      color: #0b0044;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s; }
+      .group-guest-part .bottom-group-head .left a img {
+        object-fit: cover;
+        width: 11px;
+        margin-top: -4px; }
+      .group-guest-part .bottom-group-head .left a:hover {
+        text-decoration: underline !important; }
+    .group-guest-part .bottom-group-head .right a {
+      font-family: Averta;
+      font-size: 13px;
+      line-height: 17px;
+      color: #828282;
+      -webkit-transition: all linear 0.2s;
+      -moz-transition: all linear 0.2s;
+      -ms-transition: all linear 0.2s;
+      -o-transition: all linear 0.2s;
+      transition: all linear 0.2s; }
+      .group-guest-part .bottom-group-head .right a:hover {
+        text-decoration: underline !important; }
+  .group-guest-part .all-boxes {
+    display: flex;
+    align-items: self-end; }
+    .group-guest-part .all-boxes .box {
+      margin-left: -10%;
+      width: calc(100% / 6.2);
+      margin-right: calc(6.4% / 6); }
+      .group-guest-part .all-boxes .box:first-child {
+        margin-left: 0; }
+
+@media screen and (max-width: 991px) {
+  #boxes {
+    padding-left: 15px;
+    margin: 0px; }
+    #boxes .box {
+      width: 100%;
+      margin-top: 45px; }
+      #boxes .box .edit .editPart {
+        right: -10px; }
+      #boxes .box .top .left {
+        display: block; }
+
+  .group-guest-part {
+    padding: 15px;
+    margin-left: 15px !important;
+    margin-top: 20px !important; }
+    .group-guest-part .top-group-head {
+      margin-bottom: 0px !important; }
+      .group-guest-part .top-group-head .left {
+        display: block !important;
+        font-size: 17px; }
+    .group-guest-part .bottom-group-head .left {
+      display: block !important; }
+    .group-guest-part .all-boxes {
+      flex-wrap: wrap; }
+      .group-guest-part .all-boxes .box {
+        margin-left: 0;
+        margin-top: 50px !important;
+        padding: 40px 20px 50px 25px !important; } }
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  #boxes .box {
+    width: calc(100% / 2.1); }
+    #boxes .box .top .left {
+      display: block; }
+
+  .group-guest-part .all-boxes {
+    justify-content: space-between !important; } }
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  #boxes .box {
+    width: calc(100% / 4.1); }
+    #boxes .box .top {
+      flex-wrap: wrap; }
+      #boxes .box .top .left {
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: fit-content; }
+        #boxes .box .top .left img {
+          width: 65px;
+          height: 65px; }
+      #boxes .box .top .right {
+        width: 100%; }
+      #boxes .box .top .right .time span {
+        font-size: 12px; }
+      #boxes .box .top .right .buttons a.enter {
+        height: 30px;
+        line-height: 30px; }
+      #boxes .box .top .right .buttons a.out {
+        height: 30px;
+        line-height: 30px; }
+
+  .group-guest-part .all-boxes .box {
+    margin-left: -15%; }
+    .group-guest-part .all-boxes .box .top .right {
+      height: fit-content !important;
+      margin: 20px !important; }
+      .group-guest-part .all-boxes .box .top .right .buttons a {
+        height: 25px !important;
+        line-height: 25px !important; } }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #boxes .box {
+    width: calc(100% / 2.1); }
+    #boxes .box .top .left img {
+      width: 80px;
+      height: 80px; }
+    #boxes .box .top .right .buttons a.enter {
+      height: 30px;
+      line-height: 30px; }
+    #boxes .box .top .right .buttons a.out {
+      height: 30px;
+      line-height: 30px; }
+
+  .group-guest-part .all-boxes .box {
+    margin-left: -15%;
+    padding: 40px 20px 50px 20px !important; }
+    .group-guest-part .all-boxes .box .top {
+      flex-wrap: wrap; }
+      .group-guest-part .all-boxes .box .top .left {
+        width: 100% !important;
+        text-align: center; }
+      .group-guest-part .all-boxes .box .top .right {
+        width: 100% !important;
+        height: fit-content !important;
+        margin: 20px !important; }
+        .group-guest-part .all-boxes .box .top .right .buttons a {
+          height: 25px !important;
+          line-height: 25px !important; } }
+@media screen and (min-width: 1201px) and (max-width: 1500px) {
+  #boxes .box {
+    padding: 40px 25px 50px 25px; }
+    #boxes .box .top .left img {
+      width: 65px;
+      height: 65px; }
+    #boxes .box .top .right .time {
+      height: 25px; }
+      #boxes .box .top .right .time span {
+        font-size: 11px; }
+    #boxes .box .top .right .buttons a.enter {
+      height: 27px;
+      line-height: 27px;
+      font-size: 11px; }
+    #boxes .box .top .right .buttons a.out {
+      height: 27px;
+      line-height: 27px;
+      font-size: 11px; }
+
+  .group-guest-part .all-boxes .box .top .left a img {
+    width: 55px !important;
+    height: 55px !important; }
+  .group-guest-part .all-boxes .box .top .right {
+    height: 70px !important;
+    align-items: flex-start !important; } }
+#notFound {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 100vh;
+  width: 100%; }
+  #notFound .notfoundDiv {
+    position: absolute;
+    margin: 0px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #2d72d9ad;
+    -webkit-box-shadow: 9px 12px 17px 1px rgba(255, 255, 255, 0.14);
+    -moz-box-shadow: 9px 12px 17px 1px rgba(255, 255, 255, 0.14);
+    -ms-box-shadow: 9px 12px 17px 1px rgba(255, 255, 255, 0.14);
+    -o-box-shadow: 9px 12px 17px 1px rgba(255, 255, 255, 0.14);
+    box-shadow: 9px 12px 17px 1px rgba(255, 255, 255, 0.14);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    padding: 67px; }
+    #notFound .notfoundDiv .top {
+      position: relative;
+      width: fit-content;
+      font-size: 160px;
+      font-family: Averta;
+      color: white;
+      word-break: keep-all; }
+      #notFound .notfoundDiv .top .bottom {
+        position: absolute;
+        bottom: 7%;
+        right: 1%;
+        font-size: 20px;
+        font-family: Averta; }
+    #notFound .notfoundDiv .center {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      color: white; }
+      #notFound .notfoundDiv .center .text {
+        font-size: 28px;
+        font-family: Averta;
+        text-align: center;
+        margin-top: 1vw; }
+      #notFound .notfoundDiv .center a {
+        background: #0b0044;
+        box-sizing: border-box;
+        -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px;
+        font-family: Averta;
+        font-size: 18px;
+        color: #fff;
+        text-align: center;
+        -webkit-transition: all ease-in-out 0.2s;
+        -moz-transition: all ease-in-out 0.2s;
+        -ms-transition: all ease-in-out 0.2s;
+        -o-transition: all ease-in-out 0.2s;
+        transition: all ease-in-out 0.2s;
+        padding: 10px 20px;
+        margin-left: 15px;
+        margin-top: 15px; }
+        #notFound .notfoundDiv .center a:hover {
+          background: white;
+          color: #0b0044; }
+    #notFound .notfoundDiv::before {
+      content: "";
+      position: absolute;
+      width: 155%;
+      height: 201px;
+      background: rgba(255, 255, 255, 0.205);
+      border: 1px solid #ffffff50;
+      top: -54%;
+      -webkit-transform: rotate(-32deg);
+      -moz-transform: rotate(-32deg);
+      -ms-transform: rotate(-32deg);
+      -o-transform: rotate(-32deg);
+      transform: rotate(-32deg);
+      left: -124%;
+      -webkit-transition: all 0.3s linear;
+      -moz-transition: all 0.3s linear;
+      -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+    #notFound .notfoundDiv:hover::before {
+      top: 127%;
+      left: 47%; }
+  #notFound::before {
+    clip-path: polygon(79% 0, 100% 0, 100% 100%, 46% 100%);
+    position: absolute;
+    background: #bfbfbf52;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    content: ""; }
+
+@media screen and (max-width: 991px) {
+  #notFound .notfoundDiv {
+    top: 50%;
+    width: 92%;
+    padding: 0 40px;
+    padding-bottom: 15px; }
+    #notFound .notfoundDiv .top {
+      font-size: 48px;
+      margin: 0 auto; }
+      #notFound .notfoundDiv .top .bottom {
+        bottom: -18%; }
+    #notFound .notfoundDiv .center {
+      justify-content: center; }
+      #notFound .notfoundDiv .center .text {
+        font-size: 14px;
+        margin-top: 25px;
+        width: 100%; }
+      #notFound .notfoundDiv .center a {
+        font-size: 14px;
+        padding: 5px 20px;
+        margin-left: 0;
+        margin: 0 auto;
+        margin-top: 15px; } }
+@media screen and (min-width: 767px) and (max-width: 1394px) {
+  #notFound .notfoundDiv .top {
+    font-size: 100px;
+    margin: 0 auto; }
+    #notFound .notfoundDiv .top .bottom {
+      bottom: -1%; }
+  #notFound .notfoundDiv .center .text {
+    font-size: 19px;
+    width: 100%; }
+  #notFound .notfoundDiv .center a {
+    font-size: 16px;
+    padding: 8px 15px;
+    margin: 0 auto;
+    margin-top: 15px; } }
+@media screen and (min-width: 991px) and (max-width: 1500px) {
+  #notFound {
+    position: inherit; }
+    #notFound::before {
+      height: 115vh; } }
+@media screen and (min-width: 1395px) and (max-width: 1600px) {
+  #notFound .notfoundDiv .top {
+    font-size: 140px;
+    margin: 0 auto; }
+    #notFound .notfoundDiv .top .bottom {
+      bottom: 3%;
+      font-size: 22px; }
+  #notFound .notfoundDiv .center .text {
+    font-size: 25px;
+    width: 100%; }
+  #notFound .notfoundDiv .center a {
+    margin: 0 auto;
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=style.css.map */

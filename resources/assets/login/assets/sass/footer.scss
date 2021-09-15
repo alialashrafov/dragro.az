@@ -1,0 +1,45 @@
+#footer {
+  padding-right: 70px;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  right: 0%;
+  .container-fuid {
+    .row {
+      .col-md-12 {
+        ul {
+          li {
+            text-align: right;
+            a {
+              cursor: pointer;
+              display: inline-block;
+              width: fit-content;
+              position: relative;
+              text-decoration: none;
+              padding: 0 19px;
+              padding-right: 0;
+              font-size: 16px;
+              color: white;
+              height: 77px;
+              line-height: 77px;
+              &::before {
+                position: absolute;
+                content: "";
+                width: 90%;
+                height: 1px;
+                background: white;
+                bottom: 37%;
+                left: 11%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  #footer {
+    bottom: 0%;
+  }
+}

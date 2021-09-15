@@ -1,0 +1,663 @@
+#passengersInfo {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  padding-left: 50px;
+  .container-fluid {
+    .row {
+      .col-md-5 {
+        .top {
+          h1 {
+            font-size: 22px;
+            letter-spacing: 0.05em;
+            color: #000000;
+            margin-top: 0px;
+            font-weight: bold;
+          }
+        }
+        .mainFormFirts,
+        .mainFormSecond,
+        .mainFormThird {
+          overflow: hidden;
+          .block {
+            display: flex;
+            .formParts {
+              width: 100%;
+              margin-top: 10px;
+              margin-right: 10px;
+              label {
+                cursor: pointer;
+                font-size: 12px;
+                color: #5c5c5c;
+              }
+              input,
+              select {
+                width: 100%;
+                border: 1px solid #d6d6d6;
+                border-radius: 5px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                height: 40px;
+                background: #f2f2f2;
+              
+              }
+              select {
+                overflow: hidden;
+                outline: none;
+                cursor: pointer;
+                padding-left: 10px;
+                font-size: 12px;
+                background-position: 97% 50%;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                background-size: 9px 6px;
+                background-repeat: no-repeat;
+                background-image: url(../Images/png/arrowDown.png);
+                &::-ms-expand {
+                  border: none;
+                }
+              }
+            }
+            .phone {
+              label {
+                display: block;
+                margin-bottom: 12px;
+              }
+              select {
+                padding-top: 3px;
+                display: inline-block;
+                padding-left: 10px;
+                width: 20%;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-right: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+              }
+              #phone {
+                display: inline-block;
+                width: 100%;
+              }
+              input {
+                display: inline-block;
+                width: 100px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                border-left: none;
+                margin-left: -5px;
+              }
+              input.phone {
+                width: 80%;
+              }
+            }
+          }
+          .checkbox {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+            user-select: none;
+            margin-top: 20px;
+            color: #4f4f4f;
+            .left {
+              margin-right: 35px;
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+              display: none;
+              & + label {
+                position: relative;
+                display: inline-block;
+                padding-left: 24px;
+                margin-right: 32px;
+                cursor: pointer;
+                line-height: 16px;
+                transition: all 0.2s ease-in-out;
+                margin-bottom: 10px;
+                &:before,
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: 2px;
+                  left: 0;
+                  width: 16px;
+                  height: 16px;
+                  text-align: center;
+                  color: $grey2;
+                  font-family: Times;
+                  border-radius: 50%;
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+            input[type="radio"] + label {
+              &:before {
+                box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -webkit-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -moz-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+              }
+              &:hover:before {
+                animation-duration: 0.5s;
+                box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -webkit-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -moz-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+              }
+            }
+            input[type="radio"]:checked + label {
+              &:before {
+                animation-duration: 0.2s;
+                animation-name: select-radio;
+                animation-iteration-count: 1;
+                animation-direction: Normal;
+                box-shadow: inset 0 0 0 3px $grey1, inset 0 0 0 16px $blue;
+                -webkit-box-shadow: inset 0 0 0 3px $grey1,
+                  inset 0 0 0 16px $blue;
+                -moz-box-shadow: inset 0 0 0 3px $grey1, inset 0 0 0 16px $blue;
+              }
+            }
+          }
+          a {
+            margin-top: 40px;
+            margin-right: 10px;
+            margin-left: auto;
+            display: block;
+            width: 277px;
+            height: 56px;
+            line-height: 56px;
+            text-align: center;
+            background: #02a4c8;
+            border-radius: 5px;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+          }
+        }
+        h1 {
+          margin-top: 15px;
+          font-size: 18px;
+          letter-spacing: 0.05em;
+          color: #000000;
+        }
+        .mainFormSecond,
+        .mainFormThird {
+          max-height: fit-content;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        .lineForClose {
+          width: 98%;
+          height: 1px;
+          background: black;
+          margin-top: 30px;
+          position: relative;
+          .arrow {
+            position: absolute;
+            bottom: -43px;
+            right: 40px;
+            cursor: pointer;
+            &:after {
+              content: "\f078";
+              font-family: fontAwesome;
+              color: #777;
+              font-weight: bold;
+              float: right;
+              margin-left: 5px;
+              font-size: 15px;
+              font-weight: 100;
+            }
+          }
+          .active:after {
+            content: "\f077";
+            font-family: fontAwesome;
+            font-size: 15px;
+            font-weight: 100;
+          }
+        }
+      }
+      .vehicleInfo {
+        .mainFormFirts,
+        .mainFormSecond,
+        .mainFormThird {
+          .last {
+            .formParts {
+              width: 48%;
+            }
+          }
+          a {
+            margin-right: auto;
+          }
+        }
+      }
+      .col-md-6 {
+        .about {
+          width: 450px;
+          border: 1px solid #000000;
+          border-radius: 5px;
+          padding: 40px 20px;
+          margin-left: auto;
+          margin-top: 40px;
+          h1 {
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: #000000;
+            margin-bottom: 40px;
+          }
+          .aboutContent {
+            margin-bottom: 20px;
+            ul {
+              margin-bottom: 10px;
+              li {
+                display: inline-block;
+                img {
+                  width: 15.87px;
+                }
+                img.big {
+                  width: 19px;
+                }
+                h2 {
+                  margin: 0;
+                  margin-left: 5px;
+                  font-size: 14px;
+                  letter-spacing: 0.02em;
+                  color: #000000;
+                }
+              }
+            }
+            p {
+              font-size: 14px;
+              line-height: 23px;
+              letter-spacing: 0.02em;
+              color: #000000;
+              margin-bottom: 40px;
+            }
+            &:last-child {
+              p {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .offer {
+          width: 500px;
+          background: #f8f8f8;
+          border-radius: 5px;
+          padding: 40px 60px;
+          margin-left: auto;
+          margin-top: 80px;
+          .checkbox {
+            position: relative;
+            cursor: pointer;
+            font-size: 16px;
+            user-select: none;
+            margin-top: 20px;
+            color: #4f4f4f;
+            .left {
+              margin-right: 35px;
+            }
+            input[type="radio"],
+            input[type="checkbox"] {
+              display: none;
+              & + label {
+                position: relative;
+                display: block;
+                padding-left: 24px;
+                margin-right: 32px;
+                margin-top: 20px;
+                cursor: pointer;
+                line-height: 16px;
+                transition: all 0.2s ease-in-out;
+                margin-bottom: 10px;
+                &:before,
+                &:after {
+                  content: "";
+                  position: absolute;
+                  top: 2px;
+                  left: 0;
+                  width: 16px;
+                  height: 16px;
+                  text-align: center;
+                  color: $grey2;
+                  font-family: Times;
+                  border-radius: 50%;
+                  transition: all 0.3s ease;
+                }
+              }
+            }
+            input[type="radio"] + label {
+              &:before {
+                box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -webkit-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -moz-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+              }
+              &:hover:before {
+                animation-duration: 0.5s;
+                box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -webkit-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+                -moz-box-shadow: inset 0 0 0 1px $borderColor,
+                  inset 0 0 0 16px $grey1;
+              }
+            }
+            input[type="radio"]:checked + label {
+              &:before {
+                animation-duration: 0.2s;
+                animation-name: select-radio;
+                animation-iteration-count: 1;
+                animation-direction: Normal;
+                box-shadow: inset 0 0 0 3px $grey1, inset 0 0 0 16px $blue;
+                -webkit-box-shadow: inset 0 0 0 3px $grey1,
+                  inset 0 0 0 16px $blue;
+                -moz-box-shadow: inset 0 0 0 3px $grey1, inset 0 0 0 16px $blue;
+              }
+            }
+          }
+          .bridgePart {
+            display: none;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 20px;
+            .formParts {
+              select {
+                width: 53%;
+                border: 1px solid #d6d6d6;
+                border-radius: 5px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                height: 30px;
+                background: transparent;
+                overflow: hidden;
+                outline: none;
+                cursor: pointer;
+                padding-left: 10px;
+                font-size: 12px;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+              }
+            }
+            .block {
+              display: flex;
+              .formParts {
+                width: 100%;
+                margin-top: 10px;
+                margin-right: 10px;
+                &:last-child{
+                  margin-right: 0;
+                }
+                label {
+                  cursor: pointer;
+                  font-size: 12px;
+                  color: #5c5c5c;
+                }
+                input {
+                  width: 100%;
+                  border: 1px solid #d6d6d6;
+                  border-radius: 5px;
+                  box-shadow: none;
+                  -webkit-box-shadow: none;
+                  -moz-box-shadow: none;
+                  height: 30px;
+                  background: transparent;
+                }
+              }
+            }
+          }
+          .driverPart {
+            width: 90%;
+            margin: 0 auto;
+            display: none;
+            .formParts {
+              margin-top: 20px;
+              label {
+                font-size: 12px;
+              }
+              select,
+              input {
+                width: 53%;
+                border: 1px solid #d6d6d6;
+                border-radius: 5px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                -moz-box-shadow: none;
+                height: 30px;
+                background: transparent;
+                overflow: hidden;
+                outline: none;
+                cursor: pointer;
+                padding-left: 10px;
+                font-size: 12px;
+              }
+              select {
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                &::-ms-expand {
+                  border: none;
+                  background: transparent;
+                }
+              }
+            }
+          }
+
+          .price {
+            width: fit-content;
+            margin-left: auto;
+            display: none;
+            h1 {
+              width: fit-content;
+              margin: 0 auto;
+              font-size: 15px;
+              letter-spacing: 0.03em;
+              text-decoration-line: underline;
+              color: black;
+              text-align: center;
+              position: relative;
+              margin-top: 6px;
+              &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 1px;
+                background: black;
+                bottom: 0%;
+                left: 0;
+              }
+              &:last-child {
+                margin-top: 40px;
+              }
+            }
+          }
+        }
+        a {
+          margin-top: 40px;
+          margin-left: auto;
+          display: block;
+          width: 277px;
+          height: 56px;
+          line-height: 56px;
+          text-align: center;
+          background: #02a4c8;
+          border-radius: 5px;
+          font-size: 18px;
+          letter-spacing: 0.05em;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 440px) {
+  #passengersInfo {
+    .container-fluid {
+      .row {
+        .col-md-6 {
+          .offer {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 20px 32px;
+            .checkbox {
+              .left {
+                margin-right: 0;
+              }
+            }
+          }
+          a {
+            margin: 0 auto;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  #passengersInfo {
+    padding-left: 0;
+    .container-fluid {
+      .row {
+        .col-md-5 {
+          .mainFormFirts,
+          .mainFormSecond,
+          .mainFormThird {
+            .block {
+              .phone {
+                position: relative;
+                select {
+                  width: 53px;
+                  position: absolute;
+                  left: -5px;
+                  z-index: 1;
+                  border-left: none;
+                  -moz-appearance: none;
+                  -webkit-appearance: none;
+                }
+                input.phone {
+                  width: 100%;
+                  padding-left: 63px;
+                  border-radius: 5px;
+                }
+              }
+            }
+            .checkbox {
+              input[type="radio"] + label {
+                margin-right: 10px;
+              }
+            }
+            a {
+              height: 50px;
+              line-height: 50px;
+            }
+          }
+        }
+        .col-md-6 {
+          .about {
+            width: 100%;
+            padding: 20px 10px;
+            h1 {
+              margin-bottom: 20px;
+            }
+            .aboutContent {
+              p {
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .offer {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 40px;
+            padding: 40px 32px;
+          }
+          a {
+            margin: 0 auto;
+            margin-top: 40px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1457px) {
+  #passengersInfo {
+    .container-fluid {
+      .row {
+        .col-md-5 {
+          .mainFormFirts,
+          .mainFormSecond,
+          .mainFormThird {
+            .block {
+              .formParts {
+                input,
+                select {
+                  height: 30px;
+                  -moz-appearance: none;
+                  -webkit-appearance: none;
+                }
+              }
+              .phone {
+                position: relative;
+                select {
+                  padding-left: 3px;
+                  width: 53px;
+                  position: absolute;
+                  left: -5px;
+                  z-index: 1;
+                  border-left: none;
+                  -moz-appearance: none;
+                  -webkit-appearance: none;
+                }
+                input.phone {
+                  width: 100%;
+                  padding-left: 63px;
+                  border-radius: 5px;
+                }
+              }
+            }
+            .checkbox {
+              input[type="radio"] + label {
+                margin-right: 15px;
+              }
+            }
+            a {
+              height: 50px;
+              line-height: 50px;
+            }
+          }
+        }
+        .col-md-6 {
+          .about {
+            width: 100%;
+            .aboutContent {
+              p {
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .offer {
+            width: 80%;
+            margin-left: 0 auto;
+            margin-top: 40px;
+            padding: 40px 32px;
+          }
+        }
+      }
+    }
+  }
+}
+.showPrice {
+  display: block !important;
+}

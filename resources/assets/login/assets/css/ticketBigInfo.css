@@ -1,0 +1,61 @@
+#ticketBigInfo {
+  margin-top: 35px;
+  padding: 0 50px;
+  margin-bottom: 150px; }
+  #ticketBigInfo .container-fluid .row .col-md-12 h1 {
+    font-size: 18px;
+    margin-left: 40px;
+    letter-spacing: 0.05em;
+    color: #000000; }
+  #ticketBigInfo .container-fluid .row .col-md-12 .about {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 30px 40px;
+    margin-left: auto;
+    margin-top: 40px; }
+    #ticketBigInfo .container-fluid .row .col-md-12 .about h1 {
+      font-size: 18px;
+      letter-spacing: 0.05em;
+      color: #000000;
+      margin-bottom: 40px; }
+    #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent {
+      margin-bottom: 20px; }
+      #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent ul {
+        margin-bottom: 10px; }
+        #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent ul li {
+          display: inline-block; }
+          #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent ul li img {
+            width: 15.87px; }
+          #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent ul li img.big {
+            width: 19px; }
+          #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent ul li h2 {
+            margin: 0;
+            margin-left: 5px;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: #000000; }
+      #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent p {
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 40px; }
+      #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent:last-child p {
+        margin-bottom: 0; }
+
+@media only screen and (max-width: 440px) {
+  #ticketBigInfo {
+    padding: 0; }
+    #ticketBigInfo .container-fluid .row .col-md-12 .about {
+      padding: 0 15px; }
+      #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent {
+        margin-top: 20px; } }
+@media only screen and (max-width: 768px) {
+  #ticketBigInfo {
+    padding: 0; }
+    #ticketBigInfo .container-fluid .row .col-md-12 .about {
+      padding: 0 15px; }
+      #ticketBigInfo .container-fluid .row .col-md-12 .about .aboutContent {
+        margin-top: 20px; } }
+
+/*# sourceMappingURL=ticketBigInfo.css.map */

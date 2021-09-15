@@ -1,0 +1,260 @@
+/////////////////////////////////////////////////////////////////////
+#guests {
+  margin: 40px;
+  .guests {
+    display: flex;
+    align-items: center;
+    .first,
+    .second {
+      width: calc(100% / 5.1);
+      background: #ffffff;
+      @include box-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+      @include border-radius(10px);
+      @include transition(all linear 0.2s);
+      height: 55px;
+      line-height: 55px;
+      a {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        img {
+          width: 18px;
+          object-fit: cover;
+        }
+        span {
+          color: #0047a7;
+          font-size: 15px;
+          font-family: Averta;
+        }
+      }
+      &:hover {
+        border: 1px solid #0047a7;
+      }
+    }
+    .second {
+      margin-left: 30px;
+      a {
+        img {
+          width: 30px;
+        }
+      }
+    }
+    .third {
+      width: calc(100% / 5.1);
+      @include transition(all linear 0.2s);
+      @include border-radius(10px);
+      background: #ffffff;
+      @include box-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+      @include transition(all linear 0.2s);
+      margin-left: auto;
+      height: 55px;
+      input {
+        width: 100%;
+        border: none;
+        @include border-radius(10px);
+        height: 100%;
+        padding-left: 53px;
+        padding-top: 10px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-image: url(../img/calendar.png);
+        background-position: 5% 50%;
+        color: #0047a7;
+        font-size: 16px;
+        font-family: Averta;
+        cursor: pointer;
+        outline: none;
+        @include box-shadow(none);
+      }
+      &:hover {
+        border: 1px solid #0047a7;
+      }
+      &.newReg {
+        background: transparent;
+        background: transparent;
+        width: fit-content;
+        text-align: center;
+        width: fit-content;
+        @include box-shadow(none);
+        a {
+          display: block;
+          height: 100%;
+          height: 50px;
+          width: fit-content;
+          line-height: 50px;
+          span {
+            margin-right: 10px;
+            font-family: Averta;
+            font-size: 13px;
+            color: #0047a7;
+            @include transition(all linear 0.2s);
+          }
+          img {
+            object-fit: cover;
+            width: 40px;
+            border: 1px solid #0047a7;
+            @include border-radius(50%);
+            padding: 12px;
+            @include transition(all linear 0.2s);
+          }
+        }
+        &:hover {
+          border: none;
+          a {
+            span {
+              text-decoration: underline !important;
+            }
+            img {
+              background: #0048a715;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////
+.xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
+  display: none !important;
+}
+.xdsoft_datetimepicker * {
+  font-family: Averta;
+}
+
+/////////////////////////////////////////////////////////////////////
+// Responsive
+@media screen and (max-width: 991px) {
+  #guests {
+    padding-left: 15px;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px!important;
+    .guests {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .first,
+      .second {
+        width: calc(100% / 2.2);
+        padding: 10px 0;
+        height: 110px;
+        margin: 10px 0;
+        a {
+          flex-wrap: wrap;
+          span {
+            width: 100%;
+            text-align: center;
+            line-height: 22px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .second {
+        margin-left: 0;
+      }
+      .third {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  #guests {
+    .guests {
+      .first,
+      .second {
+        width: calc(100% / 3.1);
+        height: 55px;
+        a {
+          img{
+            width: 13px;
+          }
+          span {
+            margin-top: 0px;
+          }
+        }
+      }
+      .second {
+        a {
+          img{
+            width: 20px;
+          }
+        }
+      }
+      .third {
+        width: calc(100% / 3.1);
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px){
+  #guests {
+    .guests {
+      .first,
+      .second {
+        width: calc(100% / 4.1);
+      }
+      .second {
+        margin-left: 30px;
+      }
+      .third {
+        width: calc(100% / 4.1);
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  #guests {
+    .guests {
+      justify-content: space-between;
+      .first,
+      .second {
+        width: calc(100% / 3.1);
+      }
+      .second {
+        margin-left: 0;
+      }
+      .third {
+        width: calc(100% / 3.1);
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1500px){
+  #guests {
+    .guests {
+      justify-content: space-between;
+      .first,
+      .second {
+        width: calc(100% / 4.1);
+        a {
+          img{
+            width: 16px;
+          }
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+      .second {
+        margin-left: 20px;
+        a{
+          img{
+            width: 25px;
+          }
+        }
+      }
+      .third {
+        width: calc(100% / 4.1);
+        margin-left: auto;
+      }
+    }
+  }
+}

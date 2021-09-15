@@ -1,0 +1,155 @@
+#show,
+#showSecond,
+#showDouble {
+  padding: 0 140px; }
+  #show .container-fluid .row .col-md-12 ul li,
+  #showSecond .container-fluid .row .col-md-12 ul li,
+  #showDouble .container-fluid .row .col-md-12 ul li {
+    color: white;
+    display: inline-block;
+    margin-right: 130px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05em; }
+    #show .container-fluid .row .col-md-12 ul li a,
+    #showSecond .container-fluid .row .col-md-12 ul li a,
+    #showDouble .container-fluid .row .col-md-12 ul li a {
+      color: white; }
+    #show .container-fluid .row .col-md-12 ul li:last-child,
+    #showSecond .container-fluid .row .col-md-12 ul li:last-child,
+    #showDouble .container-fluid .row .col-md-12 ul li:last-child {
+      margin-right: 0; }
+  #show .container-fluid .row .col-md-12 ul:last-child li,
+  #showSecond .container-fluid .row .col-md-12 ul:last-child li,
+  #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+    font-size: 18px;
+    margin-right: 40px; }
+  #show .container-fluid .row .col-md-12 ul:nth-child(2) li,
+  #showSecond .container-fluid .row .col-md-12 ul:nth-child(2) li,
+  #showDouble .container-fluid .row .col-md-12 ul:nth-child(2) li {
+    font-weight: 500; }
+
+#showSecond {
+  margin-top: 80px; }
+  #showSecond .container-fluid .row .col-md-12 ul li {
+    color: #5c5c5c; }
+    #showSecond .container-fluid .row .col-md-12 ul li a {
+      color: #5c5c5c; }
+
+#showDouble .container-fluid .row .col-md-12 ul {
+  width: fit-content; }
+  #showDouble .container-fluid .row .col-md-12 ul li:first-child, #showDouble .container-fluid .row .col-md-12 ul li:nth-child(3) {
+    margin-right: 20px; }
+  #showDouble .container-fluid .row .col-md-12 ul:first-child {
+    position: relative; }
+    #showDouble .container-fluid .row .col-md-12 ul:first-child::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: white;
+      bottom: -6%;
+      left: 0%; }
+  #showDouble .container-fluid .row .col-md-12 ul:last-child {
+    margin-top: 20px; }
+    #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+      margin-right: 300px; }
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li h1 {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        margin: 0 0 5px 0; }
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2) {
+        position: relative;
+        margin-right: 200px; }
+        #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2)::before {
+          position: absolute;
+          content: "";
+          width: 244px;
+          height: 1px;
+          background: white;
+          top: 50%;
+          left: -276px; }
+#showDouble:nth-child(2) {
+  margin-top: 33px; }
+
+@media only screen and (max-width: 480px) {
+  #show,
+  #showSecond,
+  #showDouble {
+    padding: 0; }
+    #show .container-fluid .row .col-md-12 ul li,
+    #showSecond .container-fluid .row .col-md-12 ul li,
+    #showDouble .container-fluid .row .col-md-12 ul li {
+      margin-right: 10px;
+      font-size: 18px; }
+    #show .container-fluid .row .col-md-12 ul:last-child,
+    #showSecond .container-fluid .row .col-md-12 ul:last-child,
+    #showDouble .container-fluid .row .col-md-12 ul:last-child {
+      margin-right: 0; }
+      #show .container-fluid .row .col-md-12 ul:last-child li,
+      #showSecond .container-fluid .row .col-md-12 ul:last-child li,
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+        margin-right: 0;
+        font-size: 16px; }
+
+  #showSecond .container-fluid .row .col-md-12 ul li:first-child {
+    margin-right: 25px; }
+
+  #showDouble {
+    padding: 0; }
+    #showDouble .container-fluid .row .col-md-12 ul li {
+      font-size: 18px; }
+      #showDouble .container-fluid .row .col-md-12 ul li:first-child, #showDouble .container-fluid .row .col-md-12 ul li:nth-child(3) {
+        margin-right: 10px; }
+    #showDouble .container-fluid .row .col-md-12 ul:first-child::before {
+      width: 90%; }
+    #showDouble .container-fluid .row .col-md-12 ul:last-child {
+      margin-right: 0; }
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+        margin-right: 0;
+        font-size: 16px; }
+        #showDouble .container-fluid .row .col-md-12 ul:last-child li h1 {
+          margin-right: 0;
+          font-size: 16px; }
+        #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2) {
+          margin-right: 0;
+          margin-right: 55px; }
+          #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2)::before {
+            display: none; } }
+@media only screen and (min-width: 481px) and (max-width: 1200px) {
+  #show,
+  #showSecond,
+  #showDouble {
+    padding: 0 35px; }
+
+  #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+    margin-right: 180px; }
+    #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2) {
+      margin-right: 40px; }
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2)::before {
+        width: 154px;
+        left: -169px; } }
+@media only screen and (min-width: 1201px) and (max-width: 1457px) {
+  #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2) {
+    margin-right: 40px; } }
+@media only screen and (min-width: 440px) and (max-width: 768px) {
+  #showDouble {
+    padding: 0; }
+    #showDouble .container-fluid .row .col-md-12 ul li {
+      font-size: 18px; }
+      #showDouble .container-fluid .row .col-md-12 ul li:first-child, #showDouble .container-fluid .row .col-md-12 ul li:nth-child(3) {
+        margin-right: 10px; }
+    #showDouble .container-fluid .row .col-md-12 ul:last-child {
+      margin-right: 0; }
+      #showDouble .container-fluid .row .col-md-12 ul:last-child li {
+        margin-right: 0;
+        font-size: 16px; }
+        #showDouble .container-fluid .row .col-md-12 ul:last-child li h1 {
+          margin-right: 0;
+          font-size: 16px; }
+        #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2) {
+          margin-right: 100px; }
+          #showDouble .container-fluid .row .col-md-12 ul:last-child li:nth-child(2)::before {
+            display: none; } }
+
+/*# sourceMappingURL=show.css.map */
